@@ -19,7 +19,7 @@ const Features = () => {
         <div className="z-20 flex w-full flex-col lg:w-[60%]">
           <div className='relative'>
             <Image
-              src="/camp.svg"
+              src="/bouquet.svg"
               alt="camp"
               width={50}
               height={50}

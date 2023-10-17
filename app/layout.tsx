@@ -4,8 +4,20 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Travel',
-  description: 'Travel UI/UX App for Camping',
+  title: 'Wedding',
+  description: 'Wedding In Georgia',
+  icons: {
+    icon:['/favicon.ico'],
+    apple:['/apple-touch-icon.png'],
+    shortcut:['/apple-touch-icon.png']
+  },
+  other: {
+    "twitter:image": 'https://i.ibb.co/Ss3fTq6/Wedding-Georgia.jpg',
+    "twitter:card": "summary_large_image",
+    "og:url": "wedding.gerogia",
+    "og:image": 'https://i.ibb.co/Ss3fTq6/Wedding-Georgia.jpg',
+    "og:type": "website",
+  }
 }
 
 export default function RootLayout({
