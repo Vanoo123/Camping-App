@@ -42,7 +42,7 @@ const Hero = () => {
           <Button 
             type="button" 
             title="Get Married Now" 
-            variant="btn_dark_green"   
+            variant="btn_dark_yellow"   
           />
         </div>
       </div>
