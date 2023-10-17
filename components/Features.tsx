@@ -25,7 +25,7 @@ const Features = () => {
               height={50}
               className="absolute left-[-5px] top-[-28px] w-10 lg:w-[50px]"
             />
-            <h4 className="bold-40 lg:bold-64">Our Features</h4>
+            <h1 className="bold-40 lg:bold-64">Our Features</h1>
           </div>
           <ul className="mt-10 grid gap-10 md:grid-cols-2 lg:mg-20 lg:gap-20">
             {FEATURES.map((feature) => (
