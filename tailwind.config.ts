@@ -32,10 +32,10 @@ module.exports = {
       backgroundImage: {
         'bg-img-1': "url('/image2.webp')",
         'bg-img-2': "url('/image3.webp')",
-        'feature-bg': "url('/feature-bg.png')",
-        pattern: "url('/pattern.png')",
-        'pattern-2': "url('/hero.jpg')",
-        'parallax': "url('/image7.jpg')",
+        'feature-bg': "url('/feature-bg.webp')",
+        pattern: "url('/pattern.webp')",
+        'pattern-2': "url('/hero.webp')",
+        'parallax': "url('/image7.webp')",
       },
       screens: {
         xs: '400px',
