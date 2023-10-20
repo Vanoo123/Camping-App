@@ -1,9 +1,8 @@
 // NAVIGATION
 export const NAV_LINKS = [
     { href: '/', key: 'home', label: 'Home' },
-    { href: '/', key: 'services', label: 'Services' },
-    { href: '/', key: 'pricing ', label: 'Pricing ' },
-    { href: '/', key: 'contact_us', label: 'Contact Us' },
+    { href: '/ourservices', key: 'services', label: 'Services' },
+    { href: '/contact', key: 'contact-us', label: 'Contact Us' },
   ];
   
   // CAMP SECTION
@@ -51,36 +50,49 @@ export const NAV_LINKS = [
     {
       title: 'Learn More',
       links: [
-        'About Hilink',
-        'Press Releases',
-        'Environment',
-        'Jobs',
         'Privacy Policy',
         'Contact Us',
       ],
-    },
-    {
-      title: 'Our Community',
-      links: ['Climbing xixixi', 'Hiking hilink', 'Hilink kinthill'],
     },
   ];
   
   export const FOOTER_CONTACT_INFO = {
     title: 'Contact Us',
     links: [
-      { label: 'Admin Officer', value: '123-456-7890' },
-      { label: 'Email Officer', value: 'hilink@akinthil.com' },
+      { label: 'Phone Number', value: '123-456-7890' },
+      { label: 'Email', value: 'example@gg.com' },
     ],
   };
   
   export const SOCIALS = {
     title: 'Social',
     links: [
-      '/facebook.svg',
-      '/instagram.svg',
-      '/twitter.svg',
-      '/youtube.svg',
-      '/wordpress.svg',
+      {
+        platform: 'Facebook',
+        url: 'https://www.facebook.com/your_facebook_page',
+        icon: '/facebook.svg',
+      },
+      {
+        platform: 'Instagram',
+        url: 'https://www.instagram.com/your_instagram_page',
+        icon: '/instagram.svg',
+      },
+      {
+        platform: 'Twitter',
+        url: 'https://twitter.com/your_twitter_page',
+        icon: '/twitter.svg',
+      },
+      {
+        platform: 'YouTube',
+        url: 'https://www.youtube.com/your_youtube_channel',
+        icon: '/youtube.svg',
+      },
+      {
+        platform: 'WordPress',
+        url: 'https://your_wordpress_site.com',
+        icon: '/wordpress.svg',
+      },
     ],
   };
+  
   
