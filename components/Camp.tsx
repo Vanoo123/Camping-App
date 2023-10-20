@@ -71,7 +71,7 @@ const Camp = () => {
             Do you want to get <strong>married quickly</strong> and don't know what to do?
           </h1>
           <p className="regular-14 xl:regular-16 mt-5 text-white">
-            Starting from the anxiety of the climbers when visiting a new climbing location, the possibility of getting lost is very large. That's why we are here for those of you who want to start an adventure
+          At <strong className="text-black underline italic">MarriageGuide</strong>, we believe in the power of love and the magic of weddings. With years of experience and a passion for perfection, our team is dedicated to creating unforgettable moments for every couple we serve.
           </p>
           <Image 
             src="/quote.svg"

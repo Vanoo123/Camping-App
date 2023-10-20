@@ -12,6 +12,8 @@ export const metadata: Metadata = {
     shortcut:['/apple-touch-icon.png']
   },
   other: {
+    'theme-color': '#fffff',
+    "color-scheme": "white only",
     "twitter:image": 'https://i.ibb.co/Ss3fTq6/Wedding-Georgia.jpg',
     "twitter:card": "summary_large_image",
     "og:url": "wedding.gerogia",
