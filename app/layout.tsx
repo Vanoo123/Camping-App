@@ -35,6 +35,7 @@ export default function RootLayout({
           {children}          
         </main>
         <Footer />
+        <script src="/assets/js/main.js" async defer></script>
       </body>
     </html>
   )
