@@ -32,7 +32,7 @@ const Navbar = () => {
         <Link href="tel:+995593220038">
           <Button 
             type="button"
-            title="Call Now"
+            title="call-Now"
             icon="/call-black.svg"
             variant="btn_white_dark"
           />
