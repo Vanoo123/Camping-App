@@ -1,7 +1,10 @@
+'use clinet';
+
 import type { Metadata } from 'next'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import LangProvider from '@/components/LangProvider'; 
 
 export const metadata: Metadata = {
   title: 'Wedding',
@@ -30,11 +33,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Navbar />
-        <main className='relative overflow-hidden'>
-          {children}          
-        </main>
-        <Footer />
+        <LangProvider>
+
+            <Navbar />
+            <main className='relative overflow-hidden'>
+              {children}          
+            </main>
+            <Footer />
+      
+        </LangProvider>
         <script src="/assets/js/main.js" async defer></script>
       </body>
     </html>

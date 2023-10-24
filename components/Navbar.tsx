@@ -1,16 +1,17 @@
+"use client";
+
 import { NAV_LINKS } from "@/constants"
 import Image from "next/image"
 import Link from "next/link"
 import Button from "./Button"
-
-import React from 'react';
-import { setLanguage } from './languageService';
-
-import { getTranslation } from './languageService';
-import LanguageSelector from './LanguageSelector';
+import {useLang,langs} from "./LangProvider"
 
 const Navbar = () => {
+
+  const { lang,changeLang } = useLang();
+
     return (
+      
       <nav className="flexBetween max-container padding-container relative z-30 py-5">
         <Link href="/">
           <Image rel="preload" src="/logo.svg" alt="logo" width={74} height={29} />
@@ -27,7 +28,7 @@ const Navbar = () => {
          {NAV_LINKS.map((link) => (
            <li key={link.key} className="regular-16 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold">
               <Link href={link.href}>
-                {getTranslation(link.key)}
+                {lang[link.key]}
               </Link>
             </li>
          ))}
@@ -55,11 +56,22 @@ const Navbar = () => {
           className="inline-block cursor-pointer lg:hidden"
         />
         <div>
-          <LanguageSelector /> 
+          <select id="langsSelect" onChange={(e)=> {
+              let lang:string = e.target.value;
+              localStorage.setItem("lang",lang);
+
+              changeLang(langs(lang))
+          } }>
+            <option value="ka">
+              ქართული
+            </option>
+            <option value="en">
+              English
+            </option>
+          </select>
         </div>
       </nav>
     )
-
 }
 
 export default Navbar

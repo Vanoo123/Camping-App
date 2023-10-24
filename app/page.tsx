@@ -1,3 +1,5 @@
+'use clinet';
+
 import Banner from "@/components/Banner";
 import Camp from "@/components/Camp";
 import Features from "@/components/Features";

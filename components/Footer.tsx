@@ -1,9 +1,14 @@
+"use client";
+
 import { FOOTER_CONTACT_INFO, FOOTER_LINKS, SOCIALS } from '@/constants'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import {useLang} from "./LangProvider"
 
 const Footer = () => {
+  const { lang } = useLang();
+
   return (
     <footer className="flexCenter mb-24">
       <div className="padding-container max-container flex w-full flex-col gap-14">
@@ -75,7 +80,7 @@ const Footer = () => {
         </div>
 
         <div className="border bg-gray-20" />
-        <p className="regular-14 w-full text-center text-gray-70">Copyright © 2023 IvaneT | All Rights Reserved</p>
+        <p className="regular-14 w-full text-center text-gray-70">{lang['footerText']}</p>
       </div>
     </footer>
   )
