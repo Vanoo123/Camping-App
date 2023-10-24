@@ -15,6 +15,7 @@ const CampSite = ({ backgroundImage, title, subtitle, peopleJoined }: CampProps)
       <div className="flexCenter gap-4">
         <div className="rounded-full bg-green-50 p-4">
           <Image
+            rel="preload"
             src="/folded-map.svg"
             alt="map"
             width={28}
@@ -31,6 +32,7 @@ const CampSite = ({ backgroundImage, title, subtitle, peopleJoined }: CampProps)
         <span className="flex -space-x-4 overflow-hidden">
           {PEOPLE_URL.map((url) => (
             <Image 
+              rel="preload"
               className="inline-block h-10 w-10 rounded-full"
               src={url}
               key={url}
@@ -67,13 +69,14 @@ const Camp = () => {
 
       <div className="flexEnd mt-10 px-6 lg:-mt-60 lg:mr-6">
         <div className="bg-green-50 p-8 lg:max-w-[500px] xl:max-w-[734px] xl:rounded-5xl xl:px-16 xl:py-20 relative w-full overflow-hidden rounded-3xl">
-          <h1 className="regular-24 md:regular-32 2xl:regular-64 capitalize text-white">
+          <h1 className="regular-24 md:regular-32 2xl:regular-64 capitalize text-black">
             Do you want to get <strong>married quickly</strong> and don't know what to do?
           </h1>
-          <p className="regular-14 xl:regular-16 mt-5 text-white">
+          <p className="regular-14 xl:regular-16 mt-5 text-black">
           At <strong className="text-black underline italic">MarriageGuide</strong>, we believe in the power of love and the magic of weddings. With years of experience and a passion for perfection, our team is dedicated to creating unforgettable moments for every couple we serve.
           </p>
           <Image 
+            rel="preload"
             src="/quote.svg"
             alt="camp-2"
             width={186}

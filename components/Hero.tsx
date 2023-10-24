@@ -8,6 +8,7 @@ const Hero = () => {
 
       <div className="relative z-20 flex flex-1 flex-col xl:w-1/2">
         <Image 
+          rel="preload"
           src="/bouquet.svg"
           alt="camp"
           width={50}
@@ -15,7 +16,7 @@ const Hero = () => {
           className="absolute left-[-5px] top-[-30px] w-10 lg:w-[50px]"
         />
         <h1 className="bold-52 lg:bold-88">Get married easily in Georgia</h1>
-        <p className="regular-16 mt-6 text-gray-30 xl:max-w-[520px]">
+        <p className="regular-16 mt-6 text-gray-70 xl:max-w-[520px] italic">
         Discover the magic of weddings designed just for you. Our team of dedicated experts is here to turn your dream wedding into a reality. Let's create memories that will last a lifetime.
         </p>
 
@@ -23,6 +24,7 @@ const Hero = () => {
           <div className="flex items-center gap-2">
             {Array(5).fill(1).map((_, index) => (
               <Image 
+                rel="preload"
                 src="/star.svg"
                 key={index}
                 alt="star"
@@ -42,7 +44,7 @@ const Hero = () => {
           <Button 
             type="button" 
             title="Get Married Now" 
-            variant="btn_dark_yellow"   
+            variant="btn_yellow_dark"   
           />
         </div>
       </div>
@@ -52,19 +54,19 @@ const Hero = () => {
 
            <div className="flex flex-col">
             <div className="flexBetween">
-              <p className="regular-16 text-gray-20">Location</p>
+              <p className="regular-16 text-gray-70">Location</p>
             </div>
-            <p className="bold-20 text-white">Georgia</p>
+            <p className="bold-20 text-black">Georgia</p>
           </div>
 
           <div className="flexBetween">
             <div className="flex flex-col">
-              <p className="regular-16 block text-gray-20">Marriage</p>
-              <p className="bold-20 text-white">In 1 day</p>
+              <p className="regular-16 block text-gray-70">Marriage</p>
+              <p className="bold-20 text-black">In 1 day</p>
             </div>
             <div className="flex flex-col">
-              <p className="regular-16 block text-gray-20">Apostille</p>
-              <p className="bold-20 text-white">In 2 Days</p>
+              <p className="regular-16 block text-gray-70">Apostille</p>
+              <p className="bold-20 text-black">In 2 Days</p>
             </div>
           </div>
         </div>
