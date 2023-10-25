@@ -7,6 +7,7 @@ import React from 'react'
 import {useLang} from "./LangProvider"
 
 const Footer = () => {
+  
   const { lang } = useLang();
 
   return (
@@ -80,7 +81,7 @@ const Footer = () => {
         </div>
 
         <div className="border bg-gray-20" />
-        <p className="regular-14 w-full text-center text-gray-70">{lang['footerText']}</p>
+        <p className="regular-14 w-full text-center text-gray-70">{lang['heroTitle']}</p>
       </div>
     </footer>
   )

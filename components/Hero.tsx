@@ -1,7 +1,13 @@
+"use client";
+
 import Image from 'next/image'
 import Button from './Button'
+import {useLang} from "./LangProvider"
 
 const Hero = () => {
+
+  const { lang } = useLang();
+
   return (
     <section className="max-container padding-container flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row">
       <div className="hero-map"/>
@@ -14,9 +20,9 @@ const Hero = () => {
           height={50}
           className="absolute left-[-5px] top-[-30px] w-10 lg:w-[50px]"
         />
-        <h1 className="bold-52 lg:bold-88">Get married easily in Georgia</h1>
+        <h1 className="bold-40 lg:bold-88">{lang['heroTitle']}</h1>
         <p className="regular-16 mt-6 text-gray-70 xl:max-w-[520px] italic">
-        Discover the magic of weddings designed just for you. Our team of dedicated experts is here to turn your dream wedding into a reality. Let's create memories that will last a lifetime.
+        {lang['heroDescription']}
         </p>
 
         <div className="my-11 flex flex-wrap gap-5">
@@ -35,14 +41,14 @@ const Hero = () => {
 
           <p className="bold-16 lg:bold-20 text-blue-70">
             100+
-            <span className="regular-16 lg:regular-20 ml-1">Married Person</span>
+            <span className="regular-16 lg:regular-20 ml-1">{lang['heroStars']}</span>
           </p>
         </div>
 
         <div className="flex flex-col w-full gap-3 sm:flex-row">
           <Button 
             type="button" 
-            title="Get Married Now" 
+            title={lang['getMarried']} 
             variant="btn_yellow_dark"
             alt="get-married"   
           />
@@ -54,19 +60,19 @@ const Hero = () => {
 
            <div className="flex flex-col">
             <div className="flexBetween">
-              <p className="regular-16 text-gray-70">Location</p>
+              <p className="regular-16 text-gray-70">{lang['location']}</p>
             </div>
-            <p className="bold-20 text-black">Georgia</p>
+            <p className="bold-20 text-black">{lang['country']}</p>
           </div>
 
           <div className="flexBetween">
             <div className="flex flex-col">
-              <p className="regular-16 block text-gray-70">Marriage</p>
-              <p className="bold-20 text-black">In 1 day</p>
+              <p className="regular-16 block text-gray-70">{lang['marriage']}</p>
+              <p className="bold-20 text-black">{lang['days']}</p>
             </div>
             <div className="flex flex-col">
-              <p className="regular-16 block text-gray-70">Apostille</p>
-              <p className="bold-20 text-black">In 2 Days</p>
+              <p className="regular-16 block text-gray-70">{lang['apostile']}</p>
+              <p className="bold-20 text-black">{lang['apostileDays']}</p>
             </div>
           </div>
         </div>
