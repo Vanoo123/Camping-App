@@ -12,6 +12,13 @@ body {
   font-family: Inter;
 }
 
+.underline-hover:hover {
+  text-decoration: underline;
+}
+.hover-opacity:hover {
+  opacity: 0.6;
+}
+
 @layer utilities {
   .btn_white {
     @apply border-white bg-white px-8 py-3 text-green-50;

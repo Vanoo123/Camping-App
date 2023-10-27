@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Button from "./Button";
 import { useLang, langs } from "./LangProvider";
+import DropDown from './DropDown';
 
 const Navbar = () => {
   const { lang, changeLang } = useLang();
@@ -25,13 +26,13 @@ const Navbar = () => {
         {NAV_LINKS.map((link) => (
           <li
             key={link.key}
-            className="regular-16 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold"
+            className="regular-16 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold underline-hover"
           >
             <Link href={link.href}>{lang[link.key]}</Link>
           </li>
         ))}
       </ul>
-      <div>
+      <div className='hidden lg:flex'>
         <select
           id="langsSelect"
           onChange={(e) => {
@@ -43,11 +44,12 @@ const Navbar = () => {
           <option value="ka">ქართული</option>
         </select>
       </div>
+      <DropDown />
       <div className="lg:flexCenter hidden group">
         <Link href="tel:+995593220038">
           <Button
             type="button"
-            title={lang["callNow"]}
+            title={lang['callNow']}
             icon="/call-black.svg"
             variant="btn_white_dark"
             alt="call"
@@ -71,16 +73,28 @@ const Navbar = () => {
 
       {isMenuOpen && (
         <div className='h-full gap-20 lg:hidden fixed top-0 w-full -left-0 backdrop-blur-[10px]'>
-          <ul className="flex flex-col justify-center items-center ">
+          <ul className="flex flex-col justify-center items-center">
             {NAV_LINKS.map((link) => ( 
               <li
                 key={link.key}
-                className="bold-20 text-my flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold p-8 on_link"
+                className="bold-20 text-my flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold p-8 hover-opacity underline-hover"
               >
                 <Link href={link.href}>{lang[link.key]}</Link>
               </li>
             ))}
           </ul>
+          <div className='flex flex-col justify-center items-center p-8'>
+            <select
+              id="langsSelect"
+              onChange={(e) => {
+                let lang: string = e.target.value;
+                localStorage.setItem("lang", lang);
+                changeLang(langs(lang));
+              }}>
+              <option value="en">English</option>
+              <option value="ka">ქართული</option>
+            </select>
+          </div>
         </div>
       )}
     </nav>

@@ -1,5 +1,8 @@
+"use client";
+
 import { PEOPLE_URL } from "@/constants";
 import Image from "next/image";
+import {useLang} from "./LangProvider"
 
 interface CampProps {
   backgroundImage: string;
@@ -9,6 +12,7 @@ interface CampProps {
 }
 
 const CampSite = ({ backgroundImage, title, subtitle, peopleJoined }: CampProps) => {
+    
   return (
     <div className={`h-full w-full min-w-[1100px] ${backgroundImage} bg-cover bg-no-repeat lg:rounded-r-5xl 2xl:rounded-5xl`}>
      <div className="flex h-full flex-col items-start justify-between p-6 lg:px-20 lg:py-10">
@@ -50,30 +54,31 @@ const CampSite = ({ backgroundImage, title, subtitle, peopleJoined }: CampProps)
 }
 
 const Camp = () => {
+  const { lang } = useLang();
   return (
     <section className="2xl:max-container relative flex flex-col py-10 lg:mb-10 lg:py-20 xl:mb-20">
       <div className="hide-scrollbar flex h-[340px] w-full items-start justify-start gap-8 overflow-x-auto lg:h-[400px] xl:h-[640px]">
         <CampSite 
           backgroundImage="bg-bg-img-1"
-          title="Married in 1 day"
-          subtitle="Georgia/Tbilisi"
-          peopleJoined="100+ Married Person"
+          title={lang['campTitle']}
+          subtitle={lang['campSubtitle']}
+          peopleJoined={lang['peopleJoinedJson']}
         />
         <CampSite 
           backgroundImage="bg-bg-img-2"
-          title="Married in 2 Days"
-          subtitle="Georgia/Kakheti"
-          peopleJoined="100+ Married Person"
+          title={lang['campTitle2']}
+          subtitle={lang['campSubtitle2']}
+          peopleJoined={lang['peopleJoinedJson']}
         />
       </div>
 
       <div className="flexEnd mt-10 px-6 lg:-mt-60 lg:mr-6">
         <div className="bg-green-50 p-8 lg:max-w-[500px] xl:max-w-[734px] xl:rounded-5xl xl:px-16 xl:py-20 relative w-full overflow-hidden rounded-3xl">
           <h1 className="regular-24 md:regular-32 2xl:regular-64 capitalize text-black">
-            Do you want to get <strong>married quickly</strong> and don't know what to do?
+          {lang['campMotivation']} <strong>{lang['campMotivation2']}</strong> {lang['campMotivation3']}
           </h1>
           <p className="regular-14 xl:regular-16 mt-5 text-black">
-          At <strong className="text-black underline italic">MarriageGuide</strong>, we believe in the power of love and the magic of weddings. With years of experience and a passion for perfection, our team is dedicated to creating unforgettable moments for every couple we serve.
+          {lang['campSubMotivation']} <strong className="text-black underline italic">{lang['campSubMotivation2']}</strong>, {lang['campSubMotivation3']}
           </p>
           <Image 
             rel="preload"

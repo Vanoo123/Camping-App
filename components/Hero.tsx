@@ -48,7 +48,7 @@ const Hero = () => {
         <div className="flex flex-col w-full gap-3 sm:flex-row">
           <Button 
             type="button" 
-            title={lang['getMarried']} 
+            title={lang['getMarried']}
             variant="btn_yellow_dark"
             alt="get-married"   
           />
