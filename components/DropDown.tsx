@@ -1,14 +1,15 @@
+"use client";
 import React, { useState, useEffect, useRef } from 'react';
 import styles from "./DropDown.module.css"
 import { useLang, langs } from "./LangProvider";
 
 const CustomDropdown = () => {
-  const { lang, changeLang } = useLang();
+  const { changeLang } = useLang();
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState({ label: 'KA', image: 'ka.png' });
   const options = [
-    { label: 'KA', image: 'ka.png' },
-    { label: 'EN', image: 'en.png' },
+    { label: 'KA', image: 'ka.png', value:'ka'},
+    { label: 'EN', image: 'en.png', value:'en'},
     // { label: 'Option 3', image: '/path/to/image3.png' }
   ];
   const dropdownRef = useRef<HTMLDivElement>(null);
@@ -20,6 +21,8 @@ const CustomDropdown = () => {
   const handleOptionClick = (option:any) => {
     setSelectedOption(option);
     setIsOpen(false);
+    localStorage.setItem("lang", option.value);
+    changeLang(langs(option.value))
   };
 
   const handleOutsideClick = (event:any) => {
