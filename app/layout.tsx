@@ -31,8 +31,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body>
+    <html lang="en" className='scroll-smooth'>
+      <body className='scrollbar-thin scrollbar-thumb-green-50 scrollbar-track-gray-10'>
         <LangProvider>
 
             <Navbar />

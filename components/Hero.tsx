@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import Button from './Button'
 import {useLang} from "./LangProvider"
+import Link from 'next/link';
 
 const Hero = () => {
 
@@ -46,12 +47,14 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-col w-full gap-3 sm:flex-row">
-          <Button 
-            type="button" 
-            title={lang['getMarried']}
-            variant="btn_yellow_dark"
-            alt="get-married"   
-          />
+          <Link href="#contact">
+            <Button 
+              type="button" 
+              title={lang['getMarried']}
+              variant="btn_yellow_dark"
+              alt="get-married"   
+            />
+          </Link>
         </div>
       </div>
 

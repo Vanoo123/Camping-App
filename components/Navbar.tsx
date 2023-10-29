@@ -32,7 +32,7 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-      <div className='hidden lg:flex'>
+      {/* <div className='hidden lg:flex'>
         <select
           id="langsSelect"
           onChange={(e) => {
@@ -43,8 +43,10 @@ const Navbar = () => {
           <option value="en">English</option>
           <option value="ka">ქართული</option>
         </select>
+      </div> */}
+      <div className='hidden lg:flex'>
+        <DropDown />
       </div>
-      <DropDown />
       <div className="lg:flexCenter hidden group">
         <Link href="tel:+995593220038">
           <Button
@@ -83,7 +85,10 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <div className='flex flex-col justify-center items-center p-8'>
+          <div className='flex flex-col justify-center items-center'>
+           <DropDown />
+          </div>
+          {/* <div className='flex flex-col justify-center items-center p-8'>
             <select
               id="langsSelect"
               onChange={(e) => {
@@ -94,7 +99,7 @@ const Navbar = () => {
               <option value="en">English</option>
               <option value="ka">ქართული</option>
             </select>
-          </div>
+          </div> */}
         </div>
       )}
     </nav>
