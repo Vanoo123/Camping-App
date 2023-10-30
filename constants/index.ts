@@ -46,26 +46,26 @@ export const NAV_LINKS = [
   ];
   
   // FOOTER SECTION
-  export const FOOTER_LINKS = [
-    {
-      title: 'Learn More',
-      links: [
-        'Privacy Policy',
-        'Contact Us',
-      ],
-    },
-  ];
+
+  export const FOOTER_LINKS = {
+    title: 'Learn More',
+    links: [
+      // { label: 'Privacy Policy', href: '/privacy', key: 'privacy'},
+      { label: 'Contact Us', href: '/contact', key: 'contactUs'},
+      { label: 'Services', href: '/ourservices', key: 'services'},
+    ]
+  };
   
   export const FOOTER_CONTACT_INFO = {
     title: 'Contact Us',
     links: [
-      { label: 'Phone Number', value: '123-456-7890' },
-      { label: 'Email', value: 'example@gg.com' },
+      { label: 'Phone Number', value: '+995-593-22-00-38', key: 'number'},
+      { label: 'Email', value: 'example@gg.com', key: 'email'},
     ],
   };
   
   export const SOCIALS = {
-    title: 'Social',
+    title: 'Social Network',
     links: [
       {
         platform: 'Facebook',
@@ -78,19 +78,14 @@ export const NAV_LINKS = [
         icon: '/instagram.svg',
       },
       {
-        platform: 'Twitter',
-        url: 'https://twitter.com/your_twitter_page',
-        icon: '/twitter.svg',
+        platform: 'WhatsApp',
+        url: 'https://wa.me/995593220038',
+        icon: '/whatsapp.svg',
       },
       {
-        platform: 'YouTube',
-        url: 'https://www.youtube.com/your_youtube_channel',
-        icon: '/youtube.svg',
-      },
-      {
-        platform: 'WordPress',
-        url: 'https://your_wordpress_site.com',
-        icon: '/wordpress.svg',
+        platform: 'Telegram',
+        url: 'https://te.me/',
+        icon: '/telegram.svg',
       },
     ],
   };

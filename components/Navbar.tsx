@@ -32,23 +32,11 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-      {/* <div className='hidden lg:flex'>
-        <select
-          id="langsSelect"
-          onChange={(e) => {
-            let lang: string = e.target.value;
-            localStorage.setItem("lang", lang);
-            changeLang(langs(lang));
-          }}>
-          <option value="en">English</option>
-          <option value="ka">ქართული</option>
-        </select>
-      </div> */}
       <div className='hidden lg:flex'>
         <DropDown />
       </div>
-      <div className="lg:flexCenter hidden group">
-        <Link href="tel:+995593220038">
+      <div className="lg:flexCenter hidden group lg:flex">
+        <Link href="https://wa.me/995593220038" target='_blank'>
           <Button
             type="button"
             title={lang['callNow']}
@@ -88,18 +76,17 @@ const Navbar = () => {
           <div className='flex flex-col justify-center items-center'>
            <DropDown />
           </div>
-          {/* <div className='flex flex-col justify-center items-center p-8'>
-            <select
-              id="langsSelect"
-              onChange={(e) => {
-                let lang: string = e.target.value;
-                localStorage.setItem("lang", lang);
-                changeLang(langs(lang));
-              }}>
-              <option value="en">English</option>
-              <option value="ka">ქართული</option>
-            </select>
-          </div> */}
+          <div className="flex flex-col justify-center items-center">
+            <Link href="https://wa.me/995593220038" target='_blank'>
+              <Button
+              type="button"
+              title={lang['callNow']}
+              icon="/call-black.svg"
+              variant="btn_white_dark"
+              alt="call"
+              />
+            </Link>
+          </div>
         </div>
       )}
     </nav>

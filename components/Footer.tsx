@@ -19,57 +19,41 @@ const Footer = () => {
           </Link>
 
           <div className='flex flex-wrap gap-10 sm:justify-between md:flex-1'>
-            {/* {FOOTER_LINKS.map((columns) => (
-              <FooterColumn title={columns.title}>
+          <div>
+            <FooterColumn title={lang['footerTitle']}>
                 <ul className="regular-14 flex flex-col gap-4 text-gray-70">
-                  {columns.links.map((link) => (
-                    <Link href="/" key={link}>
-                      {link}
-                    </Link>
-                  ))}
-                </ul>
-              </FooterColumn>
-            ))} */}
-            {FOOTER_LINKS.map((columns) => (
-              <FooterColumn title={columns.title} key={columns.title}>
-                <ul className="regular-14 flex flex-col gap-4 text-gray-70">
-                  {columns.links.map((link) => (
-                    <li key={link}>
-                      <Link href="/">
-                        {link}
-                      </Link>
+                  {FOOTER_LINKS.links.map((link, index) => (
+                    <li key={index} className='underline-hover hover-opacity'>
+                      <Link href={link.href}>{lang[link.key]}</Link>
                     </li>
-                 ))}
-                </ul>
-              </FooterColumn>
-           ))}
-
+                  ))}
+              </ul>
+             </FooterColumn>
+          </div>
 
             <div className="flex flex-col gap-5">
-              <FooterColumn title={FOOTER_CONTACT_INFO.title}>
-                {FOOTER_CONTACT_INFO.links.map((link) => (
-                  <Link
-                    href="/"
-                    key={link.label}
-                    className="flex gap-4 md:flex-col lg:flex-row"
-                  >
+              <FooterColumn title={lang['footerTitle2']}>
+                {FOOTER_CONTACT_INFO.links.map((link, index) => (
+                  <div
+                    key={index}
+                    className="flex gap-4 md:flex-col lg:flex-row">
                     <p className="whitespace-nowrap">
-                      {link.label}:
+                      {lang[link.key]}
                     </p>
-                    <p className="medium-14 whitespace-nowrap text-blue-70">
+                      <p className="medium-14 whitespace-nowrap text-blue-70">
                       {link.value}
-                    </p>
-                  </Link>
+                      </p>
+                  </div>
                 ))}
               </FooterColumn>
             </div>
 
             <div className="flex flex-col gap-5">
-              <FooterColumn title={SOCIALS.title}>
+              <FooterColumn title={lang['footerTitle3']}>
                 <ul className="regular-14 flex gap-4 text-gray-70">
                 {SOCIALS.links.map(({ platform, url, icon }) => (
                   <li key={platform}>
-                    <Link href={url} target='_blank' rel="noopener noreferrer">
+                    <Link href={url} target='_blank' rel="noopener noreferrer" className='hover-opacity'>
                       <Image src={icon} alt={`${platform} Logo`} width={24} height={24} />
                     </Link>
                   </li>
