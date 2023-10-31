@@ -19,6 +19,22 @@ body {
   opacity: 0.6;
 }
 
+form > div {
+  @apply flex flex-col gap-2;
+}
+
+input,
+textarea {
+  @apply shadow-md px-6 py-2 border border-slate-300 text-black;
+}
+
+.noresize {
+  resize: none;
+}
+.btn_contact_send {
+  @apply bg-green-90 font-bold w-full p-3 text-black transition-all hover:opacity-60;
+}
+
 @layer utilities {
   .btn_white {
     @apply border-white bg-white px-8 py-3 text-green-50;
@@ -155,7 +171,7 @@ body {
 
   /* Get App */
   .get-app {
-    @apply max-container relative flex w-full  flex-col justify-between gap-32 overflow-hidden bg-green-90 bg-pattern bg-cover bg-center bg-no-repeat px-6 py-12 text-white sm:flex-row sm:gap-12 sm:py-24 lg:px-20 xl:max-h-[598px] 2xl:rounded-5xl;
+    @apply max-container relative w-full flex-col justify-between gap-32 overflow-hidden bg-pattern bg-cover bg-center bg-no-repeat px-6 py-12 text-white sm:flex-row sm:gap-12 lg:px-20 2xl:rounded-5xl;
   }
 }
 
