@@ -5,15 +5,29 @@ import { NAV_LINKS } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import Button from "./Button";
-import { useLang, langs } from "./LangProvider";
+import { useLang, } from "./LangProvider";
 import DropDown from './DropDown';
 
+
 const Navbar = () => {
-  const { lang, changeLang } = useLang();
+  const { lang, } = useLang();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [showCloseIcon, setShowCloseIcon] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+    setShowCloseIcon(!isMenuOpen);
+    if (!isMenuOpen) {
+      document.body.classList.add('overflow-hidden');
+    } else {
+      document.body.classList.remove('overflow-hidden');
+    }
+  };
+
+  const handleMenuLinkClick = () => {
+    setIsMenuOpen(false);
+    setShowCloseIcon(false); // Close the menu and revert to hamburger icon
+    document.body.classList.remove('overflow-hidden');
   };
 
   return (
@@ -47,18 +61,28 @@ const Navbar = () => {
         </Link>
       </div>
 
-      
-
       <div className="lg:hidden z-30">
-        <Image
-          rel="preload"
-          src="menu.svg"
-          alt="menu"
-          width={32}
-          height={32}
-          className="inline-block cursor-pointer"
-          onClick={toggleMenu}
-        />
+        {showCloseIcon ? (
+          <Image
+            rel="preload"
+            src="close.svg"
+            alt="close menu"
+            width={32}
+            height={32}
+            className="inline-block cursor-pointer"
+            onClick={toggleMenu}
+          />
+        ) : (
+          <Image
+            rel="preload"
+            src="menu.svg"
+            alt="menu"
+            width={32}
+            height={32}
+            className="inline-block cursor-pointer"
+            onClick={toggleMenu}
+          />
+        )}
       </div>
 
       {isMenuOpen && (
@@ -68,22 +92,23 @@ const Navbar = () => {
               <li
                 key={link.key}
                 className="bold-20 text-my flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold p-8 hover-opacity underline-hover"
+                onClick={handleMenuLinkClick}
               >
                 <Link href={link.href}>{lang[link.key]}</Link>
               </li>
             ))}
           </ul>
           <div className='flex flex-col justify-center items-center'>
-           <DropDown />
+            <DropDown />
           </div>
           <div className="flex flex-col justify-center items-center">
             <Link href="https://wa.me/995593220038" target='_blank'>
               <Button
-              type="button"
-              title={lang['callNow']}
-              icon="/call-black.svg"
-              variant="btn_white_dark"
-              alt="call"
+                type="button"
+                title={lang['callNow']}
+                icon="/call-black.svg"
+                variant="btn_white_dark"
+                alt="call"
               />
             </Link>
           </div>
