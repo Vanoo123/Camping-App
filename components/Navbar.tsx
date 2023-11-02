@@ -26,7 +26,7 @@ const Navbar = () => {
 
   const handleMenuLinkClick = () => {
     setIsMenuOpen(false);
-    setShowCloseIcon(false); // Close the menu and revert to hamburger icon
+    setShowCloseIcon(false);
     document.body.classList.remove('overflow-hidden');
   };
 

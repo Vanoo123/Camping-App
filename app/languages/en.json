@@ -25,6 +25,23 @@
     "campSubMotivation2": "MarriageGuide",
     "campSubMotivation3": "we believe in the power of love and the magic of weddings. With years of experience and a passion for perfection, our team is dedicated to creating unforgettable moments for every couple we serve.",
     "banner": "Get Married now",
+    "features": "Our Features",
+    "feature1": {
+        "title": "Book in advance",
+        "description": "To make a reservation, it is necessary to contact us in advance in the platform of your choice"
+    },
+    "feature2": {
+        "title": "Select a location",
+        "description": "We can help you arrange your dream wedding wherever you want or we can plan it together because Georgia is known for its beautiful cities and nature."
+    },
+    "feature3": {
+        "title": "About Documents",
+        "description": "Georgia has simple laws and quick administrative resources, all you need for your dream wedding is your passports, we do the rest for you"
+    },
+    "feature4": {
+        "title": "Additional Service",
+        "description": "MarriageGuide offers additional services (pick-up at the airport, transfer to the hotel, photo/video shooting, car rental and much more)"
+    },
     "formTitle": "Contact Us",
     "formDescription": "Please Fill in the form below",
     "formFullName": "Full Name",

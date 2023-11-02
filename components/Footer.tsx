@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import {useLang} from "./LangProvider"
+import ScrollToTop from "react-scroll-to-top";
 
 const Footer = () => {
   
@@ -12,6 +13,7 @@ const Footer = () => {
 
   return (
     <footer className="flexCenter mb-24">
+      <ScrollToTop smooth top={1110} color='#000' width='40' height='30' viewBox='0 0 256 256' className='black_bg'/>
       <div className="padding-container max-container flex w-full flex-col gap-14">
         <div className="flex flex-col items-start justify-center gap-[10%] md:flex-row">
           <Link href="/" className="mb-10">
