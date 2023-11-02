@@ -64,7 +64,6 @@ const Navbar = () => {
       <div className="lg:hidden z-30">
         {showCloseIcon ? (
           <Image
-            rel="preload"
             src="close.svg"
             alt="close menu"
             width={32}
@@ -74,7 +73,6 @@ const Navbar = () => {
           />
         ) : (
           <Image
-            rel="preload"
             src="menu.svg"
             alt="menu"
             width={32}
