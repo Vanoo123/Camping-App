@@ -6,10 +6,10 @@ import { useLang, langs } from "./LangProvider";
 const CustomDropdown = () => {
   const { changeLang } = useLang();
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedOption, setSelectedOption] = useState({ label: 'EN', image: 'en.png' });
+  const [selectedOption, setSelectedOption] = useState({ label: 'EN', image: '/en.png' });
   const options = [
-    { label: 'EN', image: 'en.png', value:'en'},
-    { label: 'KA', image: 'ka.png', value:'ka'},
+    { label: 'EN', image: '/en.png', value:'en'},
+    { label: 'KA', image: '/ka.png', value:'ka'},
     // { label: 'Option 3', image: '/path/to/image3.png' }
   ];
   const dropdownRef = useRef<HTMLDivElement>(null);

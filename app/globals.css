@@ -12,8 +12,44 @@ body {
   font-family: Inter;
 }
 
+.socials {
+  transition: all 0.5s ease-out;
+}
+
+.phone:hover {
+  color: #ceb0af;
+}
+
+.facebook:hover {
+  color: #4267b2;
+}
+
+.instagram:hover {
+  color: #833ab4;
+}
+
+.telegram:hover {
+  color: #0088cc;
+}
+
+.whatsapp:hover {
+  color: #25d366;
+}
+
+.underline-hover-phone:hover {
+  text-decoration: underline;
+  transform: scale(1.05);
+}
+
 .underline-hover:hover {
   text-decoration: underline;
+  transform: scale(1.1);
+  color: #f8b67c;
+}
+
+.underline-hover-socials:hover {
+  text-decoration: underline;
+  transform: scale(1.2);
 }
 .hover-opacity:hover {
   opacity: 0.6;

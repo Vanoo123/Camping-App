@@ -40,7 +40,7 @@ const Navbar = () => {
         {NAV_LINKS.map((link) => (
           <li
             key={link.key}
-            className="regular-16 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold underline-hover"
+            className="regular-16 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all underline-hover socials"
           >
             <Link href={link.href}>{lang[link.key]}</Link>
           </li>
@@ -64,7 +64,8 @@ const Navbar = () => {
       <div className="lg:hidden z-30">
         {showCloseIcon ? (
           <Image
-            src="close.svg"
+            rel="preload"
+            src="/close.svg"
             alt="close menu"
             width={32}
             height={32}
@@ -73,7 +74,8 @@ const Navbar = () => {
           />
         ) : (
           <Image
-            src="menu.svg"
+            rel="preload"
+            src="/menu.svg"
             alt="menu"
             width={32}
             height={32}

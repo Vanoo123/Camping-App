@@ -1,10 +1,10 @@
 import React from 'react'
-import Camp from "@/components/Camp";
+import Contact from '@/components/Contact';
 
-export default function Contact() {
+export default function Contacts() {
   return (
     <>
-        <Camp />
+        <Contact />
     </>
   )
 }

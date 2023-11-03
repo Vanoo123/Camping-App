@@ -1,11 +1,11 @@
 import React from 'react'
-import Hero from "@/components/Hero";
+import Services from "@/components/Services";
 
 
-export default function Services() {
+export default function OurServices() {
   return (
     <>
-      <Hero />
+      <Services />
     </>
   )
 }
