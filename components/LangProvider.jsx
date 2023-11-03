@@ -1,6 +1,8 @@
 "use client";
 import en from "../app/languages/en.json";
 import ka from "../app/languages/ka.json";
+import ru from "../app/languages/ru.json";
+import de from "../app/languages/de.json"
 
 import React, { createContext, useState, useContext, useEffect } from 'react';
 
@@ -38,7 +40,9 @@ export const useLang = () => {
 export const langs = (lang) => {
   const langSelect = {
     "ka": ka,
-    "en": en
+    "en": en,
+    "ru": ru,
+    "de": de
   }
 
   return langSelect[lang];

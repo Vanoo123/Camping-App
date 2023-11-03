@@ -7,7 +7,7 @@ import {useLang} from "./LangProvider"
 function Contact() {
     const { lang } = useLang();
   return (
-    <section className='max-container padding-container flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row'>
+    <section className='max-container padding-container flex flex-col gap-20 py-5 md:gap-28 lg:py-5 xl:flex-row'>
         <div className='flex flex-col gap-20'>
             <p className='text-2xl italic font-semibold'>
                 {lang['contactPage']}

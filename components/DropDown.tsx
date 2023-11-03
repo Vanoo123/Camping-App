@@ -10,7 +10,8 @@ const CustomDropdown = () => {
   const options = [
     { label: 'EN', image: '/en.png', value:'en'},
     { label: 'KA', image: '/ka.png', value:'ka'},
-    // { label: 'Option 3', image: '/path/to/image3.png' }
+    { label: 'RU', image: '/ru.png', value:'ru'},
+    { label: 'DE', image: '/de.png', value:'de'}
   ];
   const dropdownRef = useRef<HTMLDivElement>(null);
 

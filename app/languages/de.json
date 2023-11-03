@@ -1,0 +1,61 @@
+{
+    "home": "Heim",
+    "services": "Dienstleistungen",
+    "contactUs": "Kontaktiere uns",
+    "callNow": "Jetzt anrufen",
+    "heroTitle": "Heiraten Sie ganz einfach in Georgia",
+    "heroDescription": "Entdecken Sie den Zauber von Hochzeiten, die nur für Sie gestaltet wurden. Unser Team aus engagierten Experten ist hier, um Ihre Traumhochzeit Wirklichkeit werden zu lassen. Lassen Sie uns Erinnerungen schaffen, die ein Leben lang anhalten.",
+    "heroStars": "Verheiratete Person",
+    "getMarried": "Heiraten Sie jetzt",
+    "location": "Standort",
+    "country": "Georgia",
+    "marriage": "Hochzeit",
+    "days": "In 1 Tag",
+    "apostile": "Apostile",
+    "apostileDays": "In 2 Tagen",
+    "campTitle": "Verheiratet in 1 Tag",
+    "campSubtitle": "Georgia/Tbilisi",
+    "peopleJoinedJson": "100+ verheiratete Person",
+    "campTitle2": "Verheiratet in 2 Tagen",
+    "campSubtitle2": "Georgia/Kakheti",
+    "campMotivation": "Willst du bekommen",
+    "campMotivation2": "schnell geheiratet",
+    "campMotivation3": "und wissen nicht, was Sie tun sollen?",
+    "campSubMotivation": "Bei",
+    "campSubMotivation2": "MarriageGuide",
+    "campSubMotivation3": "Wir glauben an die Kraft der Liebe und den Zauber von Hochzeiten. Mit jahrelanger Erfahrung und einer Leidenschaft für Perfektion ist unser Team bestrebt, für jedes Paar, das wir betreuen, unvergessliche Momente zu schaffen.",
+    "banner": "Heiraten Sie jetzt",
+    "features": "Unsere Funktionen",
+    "feature1": {
+        "title": "Buchen Sie im Voraus",
+        "description": "Um eine Reservierung vorzunehmen, ist es notwendig, uns im Voraus auf der Plattform Ihrer Wahl zu kontaktieren"
+    },
+    "feature2": {
+        "title": "Wähle einen Ort",
+        "description": "Wir können Ihnen helfen, Ihre Traumhochzeit zu organisieren, wo immer Sie möchten, oder wir planen sie gemeinsam, denn Georgien ist für seine wunderschönen Städte und Natur bekannt."
+    },
+    "feature3": {
+        "title": "Über Dokumente",
+        "description": "Georgien verfügt über einfache Gesetze und schnelle Verwaltungsressourcen. Alles, was Sie für Ihre Traumhochzeit benötigen, sind Ihre Reisepässe, den Rest erledigen wir für Sie"
+    },
+    "feature4": {
+        "title": "Zusätzlicher Service",
+        "description": "MarriageGuide bietet zusätzliche Dienstleistungen (Abholung am Flughafen, Transfer zum Hotel, Foto-/Videoaufnahmen, Autovermietung und vieles mehr)"
+    },
+    "formTitle": "Kontaktiere uns",
+    "formDescription": "Bitte füllen Sie das untenstehende Formular aus",
+    "formFullName": "Vollständiger Name",
+    "formEmail": "Email",
+    "formPhone": "Telefonnummer",
+    "formMessage": "Ihre Nachricht",
+    "formMessagePlaceHolder": "Schreiben Sie ihre Nachricht hier...",
+    "formSendButton": "Schicken",
+    "footerTitle": "Erfahren Sie mehr",
+    "privacy": "Datenschutzrichtlinie",
+    "footerTitle2": "Kontaktiere uns",
+    "number": "Telefonnummer:",
+    "email": "Email:",
+    "footerTitle3": "Soziales Netzwerk",
+    "footerText": "IvaneT © 2023 | Alle Rechte vorbehalten",
+    "contactPage": "Wir organisieren Hochzeiten in Georgia, für jedes Budget und jeden Wunsch. Bei uns müssen Sie sich keine Gedanken darüber machen, wie Sie Ihre Veranstaltung organisieren oder welche Unterlagen Sie benötigen."
+}
