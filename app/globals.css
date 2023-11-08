@@ -73,6 +73,15 @@ body {
 
 .bg-bg-img-5 {
   background-image: url("/image1.webp");
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
 }
 
 .shadow {

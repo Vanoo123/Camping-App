@@ -33,7 +33,7 @@ const Navbar = () => {
   return (
     <nav className="flexBetween max-container padding-container relative z-30 py-5">
       <Link href="/">
-        <Image rel="preload" src="/logo.svg" alt="logo" width={100} height={29} />
+        <Image rel="preload" src="/logo.svg" alt="logo" width={0} height={0} style={{width: "100px", height: "auto"}}/>
       </Link>
 
       <ul className="hidden h-full gap-12 lg:flex">

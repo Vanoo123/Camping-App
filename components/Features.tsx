@@ -16,8 +16,9 @@ const Features = () => {
             rel="preload"
             src="/phone.webp"
             alt="phone"
-            width={440}
-            height={1000}
+            width={0} 
+            height={0} 
+            style={{width: "440px", height: "auto"}}
             className="feature-phone"
           />
         </div>
