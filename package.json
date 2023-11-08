@@ -12,6 +12,7 @@
     "@emailjs/browser": "^3.11.0",
     "cookie": "^0.5.0",
     "cookies-next": "^4.0.0",
+    "i18n": "^0.15.1",
     "next": "13.5.4",
     "nextjs-current-url": "^1.0.3",
     "react": "^18",

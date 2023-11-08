@@ -33,7 +33,7 @@ const Navbar = () => {
   return (
     <nav className="flexBetween max-container padding-container relative z-30 py-5">
       <Link href="/">
-        <Image rel="preload" src="/logo.svg" alt="logo" width={74} height={29} />
+        <Image rel="preload" src="/logo.svg" alt="logo" width={100} height={29} />
       </Link>
 
       <ul className="hidden h-full gap-12 lg:flex">
@@ -51,7 +51,7 @@ const Navbar = () => {
       </div>
       <div className="lg:flexCenter hidden group lg:flex">
         <Link href="https://wa.me/995593220038" target='_blank'>
-          <Button
+          <Button 
             type="button"
             title={lang['callNow']}
             icon="/call-black.svg"
