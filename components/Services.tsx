@@ -32,7 +32,7 @@ const Services = () => {
         <Image
             rel="preload"
             src="/image1.webp"
-            alt="phone"
+            alt="marriagephoto"
             width={440}
             height={1000}
             className="relative z-20 flex w-auto shadow"
