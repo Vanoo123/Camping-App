@@ -1,12 +1,15 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { NAV_LINKS } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import Button from "./Button";
 import { useLang, } from "./LangProvider";
 import DropDown from './DropDown';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+
 
 
 const Navbar = () => {
@@ -30,13 +33,22 @@ const Navbar = () => {
     document.body.classList.remove('overflow-hidden');
   };
 
+   
+    useEffect(() => {
+      AOS.init({
+        offset: 400,
+        duration: 1000,
+      });
+    }, [])
+  
+
   return (
     <nav className="flexBetween max-container padding-container relative z-30 py-5">
       <Link href="/">
-        <Image rel="preload" src="/logo.svg" alt="logo" width={0} height={0} style={{width: "100px", height: "auto"}}/>
+        <Image rel="preload" src="/logo.svg" alt="logo" width={0} height={0} style={{width: "100px", height: "auto"}} data-aos="fade-right"/>
       </Link>
 
-      <ul className="hidden h-full gap-12 lg:flex">
+      <ul className="hidden h-full gap-12 lg:flex" data-aos="fade-down">
         {NAV_LINKS.map((link) => (
           <li
             key={link.key}
@@ -49,7 +61,7 @@ const Navbar = () => {
       <div className='hidden lg:flex'>
         <DropDown />
       </div>
-      <div className="lg:flexCenter hidden group lg:flex">
+      <div className="lg:flexCenter hidden group lg:flex" data-aos="fade-left">
         <Link href="https://wa.me/995593220038" target='_blank'>
           <Button 
             type="button"
@@ -61,7 +73,7 @@ const Navbar = () => {
         </Link>
       </div>
 
-      <div className="lg:hidden z-30">
+      <div className="lg:hidden z-30" data-aos="fade-left">
         {showCloseIcon ? (
           <Image
             rel="preload"

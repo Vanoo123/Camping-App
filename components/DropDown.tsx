@@ -2,8 +2,16 @@
 import React, { useState, useEffect, useRef } from 'react';
 import styles from "./DropDown.module.css"
 import { useLang, langs } from "./LangProvider";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 const CustomDropdown = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 400,
+      duration: 1000,
+    });
+  }, [])
   const { changeLang } = useLang();
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState({ label: 'EN', image: '/en.png' });
@@ -47,7 +55,7 @@ const CustomDropdown = () => {
   const filteredOptions = options.filter(option => option.label !== selectedOption.label);
 
   return (
-    <div className={styles.custom_dropdown} ref={dropdownRef} id='langsSelect'>
+    <div className={styles.custom_dropdown} ref={dropdownRef} id='langsSelect' data-aos="fade-down">
       <div className={styles.dropdown_header} onClick={toggleDropdown}>
         <img src={selectedOption.image} alt={selectedOption.label} className={styles.icon}/> {selectedOption.label}
       </div>
