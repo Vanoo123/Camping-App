@@ -7,8 +7,8 @@ import Accordion from './Accordion';
 const Services = () => {
   const { lang } = useLang();
   return (
-    <section className='max-container padding-container padding-bottom lg:py-5 xl:pb-12 md:pb-12'>
-      <div className='max-container padding-container padding-bottom flex flex-col-reverse gap-10 py-5 md:gap-28 lg:py-5 xl:flex-row xl:pb-12 md:pb-12'>      
+    <section className='max-container padding-container  padding-bottom lg:py-5 xl:pb-12 md:pb-12'>
+      <div className='max-container padding-bottom flex flex-col-reverse gap-10 py-5 md:gap-28 lg:py-5 xl:flex-row xl:pb-12 md:pb-12'>      
         <div className="hero-map"/>
           <div className='relative z-20 flex flex-1 flex-col xl:w-1/2 card shadow'>
               <div className='flex flex-col gap-4 relative z-20 flex-1  '>
