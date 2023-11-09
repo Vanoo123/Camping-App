@@ -67,5 +67,48 @@
     "serviceItem4": "✅ Treffen mit dem Vertreter im Haus der Gerechtigkeit;",
     "serviceItem5": "✅ Einen Heiratsantrag stellen;",
     "serviceItem6": "✅ Apostille-Übersetzung und Beglaubigung der Heiratsurkunde für das Land Ihrer Wahl in nur 2 Tagen;",
-    "serviceLast": "📣 Unser Team kümmert sich um alle Ihre Wünsche bezüglich der Heiratsurkunde. 👰‍♀️🤵💒"
+    "serviceLast": "📣 Unser Team kümmert sich um alle Ihre Wünsche bezüglich der Heiratsurkunde. 👰‍♀️🤵💒",
+    "accordionTitle": "Häufig gestellte Fragen",
+    "question1": {
+        "question": "Individuelle Hochzeitsplanung",
+        "answer": "Die Organisation einer Hochzeit, insbesondere im Ausland, ist ein komplexer und zeitaufwändiger Prozess. Damit Ihre Hochzeit so verläuft, wie Sie es sich wünschen, benötigen Sie die Hilfe eines Spezialisten. Die Agentur MarriageGuide beschäftigt sich mit der individuellen Hochzeitsplanung für ausländische Paare in Georgien. Das beinhaltet:",
+        "first": "- Entwicklung des Konzepts einer Hochzeit.",
+        "second": "- Berechnung des Budgets.",
+        "third": "- Reservierung des Restaurants, Hotels, Autos usw.",
+        "fourth": "- Auswahl eines Fotografen, Dekorateurs, Visagisten usw.",
+        "fifth": "- Kontrolle aller Phasen der Hochzeit, von der Beantragung der Heiratsregistrierung bis zur Zusendung der fertigen Hochzeitsfotos.",
+        "answer2": "Jede Hochzeit ist für uns wie ein persönliches Fest. Wir werden alles tun, um sicherzustellen, dass Ihre Hochzeit in Georgia perfekt wird."
+    },
+    "question2": {
+        "question": "Welche Dokumente benötige ich, um in Georgien zu heiraten?",
+        "answer": "Um eine Eheschließung in Georgien anzumelden, benötigen ausländische Staatsbürger:",
+        "first": "- Reisepass (mit notariell beglaubigter Übersetzung ins Georgische).",
+        "second": "- Ein genehmigter Antrag auf Eheregistrierung. Vorab beim House of Justice einzureichen.",
+        "third": "- Beglaubigte Scheidungsurkunde, wenn einer oder beide Partner bereits verheiratet waren.",
+        "answer2": "Wenn Sie in Georgien heiraten möchten, benötigen Sie möglicherweise: Geburts- und Taufurkunden, die Erlaubnis Ihres Priesters und ein Dokument, das bestätigt, dass Sie von Ihrer Kirche über die Bedeutung der Ehe und die Unverletzlichkeit ihrer Gelübde unterrichtet wurden."
+    },
+    "question3": {
+        "question": "Warum in Georgia legal heiraten?",
+        "answer": "10 Gründe, warum es sich lohnt, in Georgien einen Abschluss zu machen:",
+        "first": "- Minimale Bürokratie.",
+        "second": "- Möglichkeit, innerhalb von 24 Stunden zu heiraten.",
+        "third": "- Minimaler Papierkram – lediglich ein Reisepass und eine georgische Übersetzung sind erforderlich.",
+        "fourth": "- Sie brauchen nur zwei Trauzeugen, um zu heiraten.",
+        "fifth": "- Citizens of 94 countries don’t need a visa to visit Georgia.",
+        "sixth": "- Sie müssen kein georgischer Staatsbürger sein oder eine Aufenthaltserlaubnis haben, um zu heiraten.",
+        "seventh": "- Sehr niedrige Preise für die Organisation einer Hochzeit.", 
+        "eighth": "- In Georgien geschlossene Ehen werden weltweit als legal anerkannt.", 
+        "ninth": "- Wunderschöne Aussichten und eine große Auswahl an atemberaubenden Orten.", 
+        "tenth": "- Full wedding service from MarriageGuide Agency."
+    },
+    "question4": {
+        "question": "Können Ausländer in Georgien heiraten?",
+        "answer": "Ausländische Staatsbürger, auch solche ohne Aufenthaltserlaubnis, können in Georgien heiraten. In den letzten Jahren hat sich Georgien zu einem der Zentren des Hochzeitstourismus weltweit entwickelt. Dies ist auf die sehr loyale Gesetzgebung Georgiens in Sachen Ehe zurückzuführen. Zum Beispiel:",
+        "first": "- Um in Georgien zu heiraten, benötigen Sie lediglich einen Reisepass und zwei Zeugen.",
+        "second": "- Ausländer können innerhalb von 24 Stunden heiraten.",
+        "third": "- Citizens of 94 countries do not need a visa to visit Georgia.",
+        "fourth": "- Menschen jeder Religion können in Georgien heiraten.",
+        "fifth": "- Hochzeiten in Georgien sind viel günstiger als in den meisten Ländern.",
+        "sixth": "- Alle Sorgen rund um die Organisation der Hochzeit können von der Hochzeitsagentur ('MarriageGuide') übernommen werden."
+    }
 }

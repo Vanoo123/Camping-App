@@ -71,6 +71,10 @@ body {
   background-color: #f8b67c !important;
 }
 
+.cool_color {
+  background-color: #fad7d5;
+}
+
 .bg-bg-img-5 {
   background-image: url("/image1.webp");
   background-position: center;
