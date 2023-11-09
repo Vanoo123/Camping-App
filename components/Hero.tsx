@@ -1,32 +1,16 @@
 "use client";
 
-import React, { useEffect } from 'react';
 import Image from 'next/image'
 import Button from './Button'
 import {useLang} from "./LangProvider"
 import Link from 'next/link';
-import AOS from 'aos';
-import 'aos/dist/aos.css'; 
 
 const Hero = () => {
 
-  useEffect(() => {
-    AOS.init({
-      offset: 400,
-      duration: 1000,
-    });
-  }, [])
   const { lang } = useLang();
 
   return (
-    <section className="max-container padding-container flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row" data-aos="fade-up"
-    data-aos-offset="100"
-    data-aos-delay="50"
-    data-aos-duration="1000"
-    data-aos-easing="ease-in-out"
-    data-aos-mirror="true"
-    data-aos-once="false"
-    data-aos-anchor-placement="top-center" >
+    <section className="max-container padding-container flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row">
       <div className="hero-map"/>
       <div className="relative z-20 flex flex-1 flex-col xl:w-1/2">
         <Image 
@@ -75,7 +59,7 @@ const Hero = () => {
       </div>
 
       <div className="relative flex flex-1 items-start">
-        <div className="relative z-20 flex w-[268px] flex-col gap-8 rounded-3xl bg-green-90 px-7 py-8 shadow heroshadow" >
+        <div className="relative z-20 flex w-[268px] flex-col gap-8 rounded-3xl bg-green-90 px-7 py-8 shadow heroshadow">
 
            <div className="flex flex-col">
             <div className="flexBetween">

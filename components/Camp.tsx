@@ -1,11 +1,8 @@
 "use client";
 
-import React, { useEffect } from 'react';
 import { PEOPLE_URL } from "@/constants";
 import Image from "next/image";
 import {useLang} from "./LangProvider"
-import AOS from 'aos';
-import 'aos/dist/aos.css'; 
 
 interface CampProps {
   backgroundImage: string;
@@ -15,17 +12,12 @@ interface CampProps {
 }
 
 const CampSite = ({ backgroundImage, title, subtitle, peopleJoined }: CampProps) => {
-  useEffect(() => {
-    AOS.init({
-      offset: 400,
-      duration: 1000,
-    });
-  }, [])
+    
   return (
-    <div className={`h-full w-full min-w-[1100px] ${backgroundImage} bg-cover bg-no-repeat lg:rounded-r-5xl 2xl:rounded-5xl`} >
+    <div className={`h-full w-full min-w-[1100px] ${backgroundImage} bg-cover bg-no-repeat lg:rounded-r-5xl 2xl:rounded-5xl`}>
      <div className="flex h-full flex-col items-start justify-between p-6 lg:px-20 lg:py-10">
       <div className="flexCenter gap-4">
-        <div className="rounded-full bg-green-50 p-4" >
+        <div className="rounded-full bg-green-50 p-4">
           <Image
             rel="preload"
             src="/folded-map.svg"
@@ -81,14 +73,7 @@ const Camp = () => {
       </div>
 
       <div className="flexEnd mt-10 px-6 lg:-mt-60 lg:mr-6">
-        <div className="bg-green-50 p-8 lg:max-w-[500px] xl:max-w-[734px] xl:rounded-5xl xl:px-16 xl:py-20 relative w-full overflow-hidden rounded-3xl anothashadow" data-aos="fade-left"
-    data-aos-offset="100"
-    data-aos-delay="10"
-    data-aos-duration="1000"
-    data-aos-easing="ease-in-out"
-    data-aos-mirror="true"
-    data-aos-once="false"
-    data-aos-anchor-placement="center-bottom" >
+        <div className="bg-green-50 p-8 lg:max-w-[500px] xl:max-w-[734px] xl:rounded-5xl xl:px-16 xl:py-20 relative w-full overflow-hidden rounded-3xl anothashadow">
           <h1 className="regular-24 md:regular-32 2xl:regular-64 capitalize text-black">
           {lang['campMotivation']} <strong>{lang['campMotivation2']}</strong> {lang['campMotivation3']}
           </h1>
