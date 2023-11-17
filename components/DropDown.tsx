@@ -38,7 +38,7 @@ const CustomDropdown = () => {
     setSelectedOption(option);
     setIsOpen(false);
 
-    window.location.href = window.location.href.replace(curLang,option.value)
+    window.location.href = window.location.origin + window.location.pathname.replace(curLang,option.value)
   };
 
   const handleOutsideClick = (event:any) => {

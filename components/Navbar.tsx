@@ -30,9 +30,10 @@ const Navbar = () => {
     document.body.classList.remove('overflow-hidden');
   };
 
-  const changePage:any = (href:any) => {
-    window.location.href = window.location.origin  + "/" + curLang + href;
-  }
+  // const changePage:any = (href:any,event:Event) => {
+  //   event.preventDefault();
+  //   window.location.href = window.location.origin  + "/" + curLang + href;
+  // }
 
   const { curLang,getLang } = useLang();
   return getLang.then((t:any) => {
@@ -48,7 +49,7 @@ const Navbar = () => {
           <li
             key={link.key}
             className="regular-16 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all underline-hover socials" >
-            <a onClick={() => {changePage(link.href)}}>{t(link.key)}</a>
+            <Link  href={"/" + curLang  + link.href}>{t(link.key)}</Link>
           </li>
         ))}
       </ul>
@@ -100,7 +101,7 @@ const Navbar = () => {
                 className="bold-20 text-my flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold p-8 hover-opacity underline-hover"
                 onClick={handleMenuLinkClick}
               >
-                <a onClick={() => {changePage(link.href)}}>{t(link.key)}</a>
+                <Link  href={"/" + curLang + link.href}>{t(link.key)}</Link>
               </li>
             ))}
           </ul>
