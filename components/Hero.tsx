@@ -5,11 +5,11 @@ import Button from "./Button";
 import { useTranslation } from '../app/i18n'
 import Link from "next/link";
 import { componentProps } from "@/app/[lng]/page";
+import { useLang } from "./LangProvider";
 
 const Hero: React.FC<componentProps> = async ({ lng } ) => {
-
-  return useTranslation(lng).then((res) => {
-    const t = res.t;
+  const { getLang } = useLang();
+  return getLang.then((t:any) => {
     return (
       <section className="max-container padding-container flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row">
         <div className="hero-map" />

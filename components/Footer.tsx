@@ -9,7 +9,7 @@ import ScrollToTop from "react-scroll-to-top";
 
 const Footer = () => {
   
-  const { getLang } = useLang();
+  const { curLang,getLang } = useLang();
   return getLang.then((lang:any) => {
 
   return (
@@ -17,7 +17,7 @@ const Footer = () => {
       <ScrollToTop smooth top={1110} color='#000' width='40' height='30' viewBox='0 0 256 256' className='black_bg'/>
       <div className="padding-container max-container flex w-full flex-col gap-14">
         <div className="flex flex-col items-start justify-center gap-[10%] md:flex-row">
-          <Link href="/" className="mb-10">
+          <Link href={"/" + curLang} className="mb-10">
             <Image rel="preload" src="/assets/logo.svg" alt="logo" width={0} height={0} style={{width: "100px", height: "auto"}}/>
           </Link>
 
@@ -27,7 +27,7 @@ const Footer = () => {
                 <ul className="regular-14 flex flex-col gap-4 text-gray-70">
                   {FOOTER_LINKS.links.map((link, index) => (
                     <li key={index} className='underline-hover hover-opacity socials'>
-                      <Link href={link.href}>{lang[link.key]}</Link>
+                      <Link  href={"/" + curLang  + link.href}>{lang(link.key)}</Link>
                     </li>
                   ))}
               </ul>

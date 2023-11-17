@@ -110,5 +110,23 @@
         "fourth": "- People of any religion can get married in Georgia.",
         "fifth": "- Weddings in Georgia are much cheaper than in most countries.",
         "sixth": "- All worries about the organization of the wedding can take care of by the wedding agency ('MarriageGuide')"
+    },
+    "metaData": {
+        "title": "Wedding",
+        "description": "Wedding In Georgia",
+        "icons": {
+          "icon":["/favicon.ico"],
+          "apple":["/assets/apple-touch-icon.png"],
+          "shortcut":["/assets/apple-touch-icon.png"]
+        },
+        "other": {
+          "theme-color": "#fffff",
+          "color-scheme": "white only",
+          "twitter:image": "https://i.ibb.co/Ss3fTq6/Wedding-Georgia.jpg",
+          "twitter:card": "summary_large_image",
+          "og:url": "wedding.gerogia",
+          "og:image": "https://i.ibb.co/Ss3fTq6/Wedding-Georgia.jpg",
+          "og:type": "website"
+        }
     }
 }

@@ -110,6 +110,24 @@
         "fourth": "- საქართველოში ნებისმიერი რელიგიის წარმომადგენელს შეუძლია დაქორწინება.",
         "fifth": "- ქორწილები საქართველოში ბევრად იაფია, ვიდრე ბევრ ქვეყანაში.",
         "sixth": "- ქორწილის ორგანიზებასთან დაკავშირებული ყველა საზრუნავი შეიძლება ზრუნავდეს საქორწილო სააგენტოს მიერ ('MarriageGuide')"
+    },
+    "metaData": {
+        "title": "ქორწინება",
+        "description": "ქორწინება საქართველოში",
+        "icons": {
+          "icon":["/favicon.ico"],
+          "apple":["/assets/apple-touch-icon.png"],
+          "shortcut":["/assets/apple-touch-icon.png"]
+        },
+        "other": {
+          "theme-color": "#fffff",
+          "color-scheme": "white only",
+          "twitter:image": "https://i.ibb.co/Ss3fTq6/Wedding-Georgia.jpg",
+          "twitter:card": "summary_large_image",
+          "og:url": "wedding.gerogia",
+          "og:image": "https://i.ibb.co/Ss3fTq6/Wedding-Georgia.jpg",
+          "og:type": "website"
+        }
     }
 
 }

@@ -110,5 +110,23 @@
         "fourth": "- Menschen jeder Religion können in Georgien heiraten.",
         "fifth": "- Hochzeiten in Georgien sind viel günstiger als in den meisten Ländern.",
         "sixth": "- Alle Sorgen rund um die Organisation der Hochzeit können von der Hochzeitsagentur ('MarriageGuide') übernommen werden."
+    },
+    "metaData": {
+        "title": "Wedding",
+        "description": "Wedding In Georgia",
+        "icons": {
+          "icon":["/favicon.ico"],
+          "apple":["/assets/apple-touch-icon.png"],
+          "shortcut":["/assets/apple-touch-icon.png"]
+        },
+        "other": {
+          "theme-color": "#fffff",
+          "color-scheme": "white only",
+          "twitter:image": "https://i.ibb.co/Ss3fTq6/Wedding-Georgia.jpg",
+          "twitter:card": "summary_large_image",
+          "og:url": "wedding.gerogia",
+          "og:image": "https://i.ibb.co/Ss3fTq6/Wedding-Georgia.jpg",
+          "og:type": "website"
+        }
     }
 }

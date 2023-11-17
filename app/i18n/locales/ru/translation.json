@@ -110,5 +110,23 @@
         "fourth": "- В Грузии могут жениться люди любого вероисповедания.",
         "fifth": "- Свадьбы в Грузии обходятся намного дешевле, чем в большинстве стран.",
         "sixth": "- Все заботы по организации свадьбы может взять на себя свадебное агентство ('MarriageGuide')."
+    },
+    "metaData": {
+        "title": "Wedding",
+        "description": "Wedding In Georgia",
+        "icons": {
+          "icon":["/favicon.ico"],
+          "apple":["/assets/apple-touch-icon.png"],
+          "shortcut":["/assets/apple-touch-icon.png"]
+        },
+        "other": {
+          "theme-color": "#fffff",
+          "color-scheme": "white only",
+          "twitter:image": "https://i.ibb.co/Ss3fTq6/Wedding-Georgia.jpg",
+          "twitter:card": "summary_large_image",
+          "og:url": "wedding.gerogia",
+          "og:image": "https://i.ibb.co/Ss3fTq6/Wedding-Georgia.jpg",
+          "og:type": "website"
+        }
     }
 }

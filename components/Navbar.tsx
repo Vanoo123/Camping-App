@@ -40,7 +40,7 @@ const Navbar = () => {
 
   return (
     <nav className="flexBetween max-container padding-container relative z-30 py-5">
-      <Link href="/">
+      <Link href={"/" + curLang}>
         <Image rel="preload" src="/assets/logo.svg" alt="logo" width={0} height={0} style={{width: "100px", height: "auto"}}/>
       </Link>
 
