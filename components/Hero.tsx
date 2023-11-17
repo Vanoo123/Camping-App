@@ -16,7 +16,7 @@ const Hero: React.FC<componentProps> = async ({ lng } ) => {
         <div className="relative z-20 flex flex-1 flex-col xl:w-1/2">
           <Image
             rel="preload"
-            src="assets/bouquet.svg" 
+            src="/assets/bouquet.svg" 
             alt="camp"
             width={50}
             height={50}
