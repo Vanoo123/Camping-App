@@ -30,12 +30,12 @@ module.exports = {
         },
       },
       backgroundImage: {
-        'bg-img-1': "url('/image2.webp')",
-        'bg-img-2': "url('/image3.webp')",
-        'feature-bg': "url('/feature-bg.webp')",
-        pattern: "url('/pattern.webp')",
-        'pattern-2': "url('/hero.webp')",
-        'parallax': "url('/image7.webp')",
+        'bg-img-1': "url('/assets/image2.webp')",
+        'bg-img-2': "url('/assets/image3.webp')",
+        'feature-bg': "url('/assets/feature-bg.webp')",
+        pattern: "url('/assets/pattern.webp')",
+        'pattern-2': "url('/assets/hero.webp')",
+        'parallax': "url('/assets/image7.webp')",
       },
       screens: {
         xs: '400px',

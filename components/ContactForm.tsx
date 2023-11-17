@@ -20,30 +20,31 @@ export default function ContactForm() {
         e.target.reset()
     }
 
-    const { lang } = useLang();
+    const { getLang } = useLang();
+    return getLang.then((lang:any) => {
     return <>
         <form ref={form} onSubmit={sendmail} className='py-4 flex flex-col mt-4 border-t gap-5'>
             <div>
-                <label htmlFor="fullname">{lang['formFullName']}</label>
+                <label htmlFor="fullname">{lang('formFullName')}</label>
                 <input name='fullname' type="text" id="fullname" placeholder="John Doe"/>
             </div>
 
             <div>
-                <label htmlFor="email">{lang['formEmail']}</label>
+                <label htmlFor="email">{lang('formEmail')}</label>
                 <input name='email' type="text" id="email" placeholder="example@example.com"/>
             </div>
 
             <div>
-                <label htmlFor="phone">{lang['formPhone']}</label>
+                <label htmlFor="phone">{lang('formPhone')}</label>
                 <input name='phone' type="tel" id="phone" placeholder="+1 (123) 456-7890"/>
             </div>
             
             <div>
-                <label htmlFor="message">{lang['formMessage']}</label>
-                <textarea name='message' className='h-32 noresize' id="message" placeholder={lang['formMessagePlaceHolder']}></textarea>
+                <label htmlFor="message">{lang('formMessage')}</label>
+                <textarea name='message' className='h-32 noresize' id="message" placeholder={lang('formMessagePlaceHolder')}></textarea>
             </div>
             
-            <Button variant="btn_contact_send" type='submit' title={lang['formSendButton']} alt={''} />
+            <Button variant="btn_contact_send" type='submit' title={lang('formSendButton')} alt={''} />
         </form>
         <ToastContainer 
         position='top-center'
@@ -51,4 +52,5 @@ export default function ContactForm() {
         theme='light'
         autoClose={2000}/>
     </>
+    })
 }

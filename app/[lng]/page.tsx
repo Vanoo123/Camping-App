@@ -6,14 +6,26 @@ import Features from "@/components/Features";
 import GetApp from "@/components/GetApp";
 import Hero from "@/components/Hero";
 
-export default function Home() {
+export interface HomeProps {
+  params: {
+    lng: string; 
+  };
+}
+
+export interface componentProps {
+  lng: string;
+}
+
+const Home: React.FC<HomeProps> = async ({ params: { lng } }) => {
   return (
     <>
-      <Hero />
+      <Hero lng={lng}/>
       <Camp />
-      <Banner />
+      <Banner  />
       <Features />
-      <GetApp />
+      <GetApp  />
     </>
-  )
-}
+  );
+};
+
+export default Home;

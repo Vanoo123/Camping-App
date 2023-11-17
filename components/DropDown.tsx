@@ -1,18 +1,33 @@
 "use client";
 import React, { useState, useEffect, useRef } from 'react';
 import styles from "./DropDown.module.css"
-import { useLang, langs } from "./LangProvider";
+import { useLang } from './LangProvider';
+
+ interface IOptions {
+  label: string;
+  image: string;
+  value: string;
+}
 
 const CustomDropdown = () => {
-  const { changeLang } = useLang();
-  const [isOpen, setIsOpen] = useState(false);
-  const [selectedOption, setSelectedOption] = useState({ label: 'EN', image: '/en.png' });
+  const { curLang } = useLang();
+
   const options = [
-    { label: 'EN', image: '/en.png', value:'en'},
-    { label: 'KA', image: '/ka.png', value:'ka'},
-    { label: 'RU', image: '/ru.png', value:'ru'},
-    { label: 'DE', image: '/de.png', value:'de'}
+    { label: 'EN', image: '/assets/en.png', value:'en'},
+    { label: 'KA', image: '/assets/ka.png', value:'ka'},
+    { label: 'RU', image: '/assets/ru.png', value:'ru'},
+    { label: 'DE', image: '/assets/de.png', value:'de'}
   ];
+  
+  const defaultOp: IOptions | undefined = options.find((item: any) => item.value === curLang);
+
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedOption, setSelectedOption] = useState({
+    label: defaultOp?.label || '', 
+    image: defaultOp?.image || '',
+    value: defaultOp?.value || ''
+  });
+
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   const toggleDropdown = () => {
@@ -22,8 +37,8 @@ const CustomDropdown = () => {
   const handleOptionClick = (option:any) => {
     setSelectedOption(option);
     setIsOpen(false);
-    localStorage.setItem("lang", option.value);
-    changeLang(langs(option.value))
+
+    window.location.href = window.location.href.replace(curLang,option.value)
   };
 
   const handleOutsideClick = (event:any) => {
@@ -32,19 +47,19 @@ const CustomDropdown = () => {
     }
   };
 
+  let filteredOptions = options.filter(option => option.label !== selectedOption.label && option.value != curLang);
+
+
   useEffect(() => {
     document.addEventListener('mousedown', handleOutsideClick);
-    let lang1 = localStorage.getItem("lang");
-    if (lang1 && langs.length > 0){
-      let option = options.filter(i => i.value == lang1)[0];
-      setSelectedOption(option);
-    }
+    let option:any = options.filter((item:any) => item.value == curLang)[0];
+    setSelectedOption(option);
+
     return () => {
       document.removeEventListener('mousedown', handleOutsideClick);
     };
   }, []);
 
-  const filteredOptions = options.filter(option => option.label !== selectedOption.label);
 
   return (
     <div className={styles.custom_dropdown} ref={dropdownRef} id='langsSelect'>

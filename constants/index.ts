@@ -7,10 +7,10 @@ export const NAV_LINKS = [
   
   // CAMP SECTION
   export const PEOPLE_URL = [
-    '/person-1-min.webp',
-    '/person-2-min.webp',
-    '/person-3-min.webp',
-    '/person-4-min.webp',
+    '/assets/person-1-min.webp',
+    '/assets/person-2-min.webp',
+    '/assets/person-3-min.webp',
+    '/assets/person-4-min.webp',
   ];
   
   // FEATURES SECTION
@@ -20,28 +20,28 @@ export const NAV_LINKS = [
       title: 'Title',
       description: 'Description',
       variant: 'green',
-      icon: '/calendar.svg',
+      icon: '/assets/calendar.svg',
     },
     {
       key: 'feature2',
       title: 'Title',
       description: 'Description',
       variant: 'green',
-      icon: '/location.svg',
+      icon: '/assets/location.svg',
     },
     {
       key: 'feature3',
       title: 'Title',
       description: 'Description',
       variant: 'green',
-      icon: '/documents.svg',
+      icon: '/assets/documents.svg',
     },
     {
       key: 'feature4',
       title: 'Title',
       description: 'Description',
       variant: 'green',
-      icon: '/photo-video.svg',
+      icon: '/assets/photo-video.svg',
     },
   ];
 
@@ -90,22 +90,22 @@ export const NAV_LINKS = [
       {
         platform: 'Facebook',
         url: 'https://www.facebook.com/your_facebook_page',
-        icon: '/facebook.svg',
+        icon: '/assets/facebook.svg',
       },
       {
         platform: 'Instagram',
         url: 'https://www.instagram.com/your_instagram_page',
-        icon: '/instagram.svg',
+        icon: '/assets/instagram.svg',
       },
       {
         platform: 'WhatsApp',
         url: 'https://wa.me/995593220038',
-        icon: '/whatsapp.svg',
+        icon: '/assets/whatsapp.svg',
       },
       {
         platform: 'Telegram',
         url: 'https://te.me/',
-        icon: '/telegram.svg',
+        icon: '/assets/telegram.svg',
       },
     ],
   };
