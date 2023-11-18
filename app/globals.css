@@ -298,3 +298,9 @@ textarea {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+@media (min-width: 1024px) {
+  #DoYouWantToGetMarried {
+    max-width: 700px;
+  }
+}
