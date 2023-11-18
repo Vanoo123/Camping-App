@@ -24,8 +24,20 @@ const RootLayout: React.FC<RootLayoutProps> = async ({ children, params: { lng }
   return (
     <html lang={lng} className='scroll-smooth'>
       <head>
+
       <title>{t('metaData.title')}</title>
-        <meta name="description" content={t('metaData.description')}/>
+      <meta name="description" content={t('metaData.description')}/>
+      <meta property='og:url' content='https://wedding-guide-app.vercel.app/en'/>
+      <meta property='og:type' content='website'/>
+      <meta property='og:title' content={t('metaData.title')}/>
+      <meta property='og:description' content={t('metaData.description')}/>
+      <meta property='og:image' content='https://i.ibb.co/Ss3fTq6/Wedding-Georgia.jpg'/>
+      <meta property='theme-color' content='#fffff'/>      
+      <meta property='color-scheme' content='white only'/>
+      <meta property='twitter:url' content='https://wedding-guide-app.vercel.app/en'/>
+      <meta name='twitter:card' content='summary_large_image'/>
+      <meta name='twitter:image' content='https://i.ibb.co/Ss3fTq6/Wedding-Georgia.jpg'/>
+      {/* icons */}
       </head>
       <body className='scrollbar-thin scrollbar-thumb-green-50 scrollbar-track-gray-10'>
         <LangProvider params={{lng}}>
