@@ -74,7 +74,7 @@ const Navbar = () => {
         <DropDown />
       </div>
       <div className="lg:flexCenter hidden group lg:flex">
-        <Link href="https://wa.me/995593220038" target='_blank'>
+        <Link href="https://wa.me/995557779117" target='_blank'>
           <Button 
             type="button"
             title={t('callNow')}
@@ -113,7 +113,7 @@ const Navbar = () => {
           <DropDown />
         </div>
         <div className="flex flex-col justify-center items-center">
-          <Link href="https://wa.me/995593220038" target='_blank'>
+          <Link href="https://wa.me/995557779117" target='_blank'>
             <Button
               type="button"
               title={t('callNow')}

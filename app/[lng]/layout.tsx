@@ -26,6 +26,7 @@ const RootLayout: React.FC<RootLayoutProps> = async ({ children, params: { lng }
       <head>
 
       <title>{t('metaData.title')}</title>
+      <link rel="icon" href="/assets/favicon.ico"/>
       <meta name="description" content={t('metaData.description')}/>
       <meta property='og:url' content='https://wedding-guide-app.vercel.app/en'/>
       <meta property='og:type' content='website'/>

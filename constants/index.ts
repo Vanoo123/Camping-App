@@ -49,19 +49,50 @@ export const NAV_LINKS = [
     {
         id: 1,
         key: "question1",
-        
+        child: [
+          "first",
+          "second",
+          "third",
+          "fourth",
+          "fifth",
+        ]
     },
     {
         id: 2,
         key: "question2",
+        child: [
+          "first",
+          "second",
+          "third"
+        ]
     },
     {
         id: 3,
         key: "question3",
+        child: [
+          "first",
+          "second",
+          "third",
+          "fourth",
+          "fifth",
+          "sixth",
+          "seventh",
+          "eighth",
+          "ninth",
+          "tenth", 
+        ]
     },
     {
       id: 4,
       key: "question4",
+      child: [
+        "first",
+        "second",
+        "third",
+        "fourth",
+        "fifth",
+        "sixth"
+      ]
   },
 ];
   
@@ -79,8 +110,8 @@ export const NAV_LINKS = [
   export const FOOTER_CONTACT_INFO = {
     title: 'Contact Us',
     links: [
-      { label: 'Phone Number', value: '+995-593-22-00-38', key: 'number'},
-      { label: 'Email', value: 'example@gg.com', key: 'email'},
+      { label: 'Phone Number', value: '+995-557-77-91-17', key: 'number'},
+      { label: 'Email', value: 'Marriageguide117@gmail.com', key: 'email'},
     ],
   };
   
@@ -89,22 +120,22 @@ export const NAV_LINKS = [
     links: [
       {
         platform: 'Facebook',
-        url: 'https://www.facebook.com/your_facebook_page',
+        url: 'https://www.facebook.com/MarriageGuide117',
         icon: '/assets/facebook.svg',
       },
       {
         platform: 'Instagram',
-        url: 'https://www.instagram.com/your_instagram_page',
+        url: 'https://www.instagram.com/marriageguide117',
         icon: '/assets/instagram.svg',
       },
       {
         platform: 'WhatsApp',
-        url: 'https://wa.me/995593220038',
+        url: 'https://wa.me/995557779117',
         icon: '/assets/whatsapp.svg',
       },
       {
         platform: 'Telegram',
-        url: 'https://te.me/',
+        url: 'https://t.me/marriageguide117',
         icon: '/assets/telegram.svg',
       },
     ],

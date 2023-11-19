@@ -6,55 +6,81 @@ import { useLang } from "./LangProvider";
 import { QUESTIONS } from "@/constants";
 
 const Accordion = () => {
+  let activeQuestion = 1;
+  let tmpSet:any = [];
 
-  const [activeQuestion, setActiveQuestion] = useState<number | null>(
-    QUESTIONS[0].id // Set the initial state to the ID of the first question
-  );
+  const setActiveQuestion = (id:any) => {
+    
+    let allClosed:any = document.querySelectorAll(".allClosed");
+    let closed:any = document.querySelector("#closed" + id);
+
+    let allOpend:any = document.querySelectorAll(".allOpend");
+    let opend:any = document.querySelector("#opend" + id);
+
+    let allaccor:any = document.querySelectorAll(".acorAll");
+    let opeaccor:any = document.querySelector("#acor" + id);
+
+    tmpSet[id + 'cl'] = closed.style.display;
+    tmpSet[id + 'op'] = opend.style.display;
+
+    allaccor.forEach((o:any) => {o.style.display = 'none' });
+    allClosed.forEach((o:any) => {o.style.display = 'none' });
+    allOpend.forEach((o:any) => {o.style.display = 'block' });
+
+    if(tmpSet[id + 'cl'] == "none"){
+      opend.style.display = 'none';
+      closed.style.display = 'block';
+      opeaccor.style.display = 'block';
+    }
+
+    activeQuestion = id;
+  }
+
+
   const { getLang } = useLang();
   return getLang.then((lang:any) => {
 
   return (
     <div className="flex justify-center items-center">
-      <div className="m-auto max-w-[1400px] bg-gray-300 p-8 rounded-lg shadow-md xl:p-28 xl:w-[89%] ">
+      <div className="m-auto max-w-[1400px] bg-gray-300 p-5 rounded-lg shadow-md xl:p-28 xl:w-[89%] xl:mt-20" style={{width: '100%'}}>
         <h1 className="text-2xl mb-6 font-semibold">
           {lang("accordionTitle")}
-        </h1>
+        </h1> 
         {QUESTIONS.map((q) => (
           <div key={q.id} className="mb-4 last:mb-0">
             <button
               className="w-full text-left text-xl focus:outline-none p-4 bg-gray-100 rounded-lg shadow-md flex justify-between items-center"
               onClick={() =>
-                setActiveQuestion((prev) => (prev === q.id ? null : q.id))
+                setActiveQuestion(q.id)
               }
             >
               {lang(q.key + ".question")}
-              {activeQuestion === q.id ? <FaMinusCircle /> : <FaPlusCircle />}
+              
+              <span id={'closed' + q.id} style={{display:  activeQuestion === q.id ? 'block' :'none'}} className="allClosed">
+                <FaMinusCircle />
+              </span> 
+                
+              <span  id={'opend' + q.id} style={{display:  activeQuestion !== q.id ? 'block' :'none'}} className="allOpend">
+                 <FaPlusCircle />
+              </span>
+              
             </button>
-            <AnimatePresence>
-              {activeQuestion === q.id && (
+            <div id={'acor' + q.id} className="acorAll" style={{display:  activeQuestion === q.id ? 'block' :'none'}}>
+              <AnimatePresence>
                 <motion.div
                   initial={{ opacity: 0, height: 0 }}
                   animate={{ opacity: 1, height: "auto" }}
                   exit={{ opacity: 0, height: 0 }}
-                  className="mt-2 text-gray-600 ml-4 text-lg flex flex-col gap-5"
-                >
+                  className="mt-2 text-gray-600 ml-4 text-lg flex flex-col gap-5">
                   <p>{lang(q.key + '.answer')}</p>
                   <ul className="text-black text-base flex flex-col gap-2">
-                    <li key={`${q.key}-first`} className="rounded-lg bg-green-200">{lang(q.key + '.first')}</li>
-                    <li key={`${q.key}-second`} className="rounded-lg bg-green-200">{lang(q.key + '.second')}</li>
-                    <li key={`${q.key}-third`} className="rounded-lg bg-green-200">{lang(q.key + '.third')}</li>
-                    <li key={`${q.key}-fourth`} className="rounded-lg bg-green-200">{lang(q.key + ".fourth")}</li>
-                    <li key={`${q.key}-fifth`} className="rounded-lg bg-green-200">{lang(q.key + '.fifth')}</li>
-                    <li key={`${q.key}-sixth`} className="rounded-lg bg-green-200">{lang(q.key + '.sixth')}</li>
-                    <li key={`${q.key}-seventh`} className="rounded-lg bg-green-200">{lang(q.key + '.seventh')}</li>
-                    <li key={`${q.key}-eighth`} className="rounded-lg bg-green-200">{lang(q.key + '.eighth')}</li>
-                    <li key={`${q.key}-ninth`} className="rounded-lg bg-green-200">{lang(q.key + '.ninth')}</li>
-                    <li key={`${q.key}-tenth`} className="rounded-lg bg-green-200">{lang(q.key + '.tenth')}</li>
+                    {q.child.map((ch) => (<li key={`${q.key}-${ch}`} className="rounded-lg font-bold">{lang(q.key + '.' + ch)}</li>))}
                   </ul>
                   <p className="text-lg text-black">{lang(q.key + '.answer2')}</p>
                 </motion.div>
-              )}
             </AnimatePresence>
+            </div>
+            
           </div>
         ))}
       </div>
