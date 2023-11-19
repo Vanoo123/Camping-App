@@ -38,9 +38,9 @@ const Accordion = () => {
                   exit={{ opacity: 0, height: 0 }}
                   className="mt-2 text-gray-600 ml-4 text-lg flex flex-col gap-5"
                 >
-                  <p>{lang(q.key).answer}</p>
+                  <p>{lang(q.key + '.answer')}</p>
                   <ul className="text-black text-base flex flex-col gap-2">
-                    <li key={`${q.key}-first`} className="rounded-lg bg-green-200">{lang(q.key+ '.first')}</li>
+                    <li key={`${q.key}-first`} className="rounded-lg bg-green-200">{lang(q.key + '.first')}</li>
                     <li key={`${q.key}-second`} className="rounded-lg bg-green-200">{lang(q.key + '.second')}</li>
                     <li key={`${q.key}-third`} className="rounded-lg bg-green-200">{lang(q.key + '.third')}</li>
                     <li key={`${q.key}-fourth`} className="rounded-lg bg-green-200">{lang(q.key + ".fourth")}</li>
