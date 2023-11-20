@@ -57,7 +57,7 @@ const Navbar = () => {
   return getLang.then((t:any) => (
     <nav className="flexBetween max-container padding-container relative z-30 py-5">
       <Link href={"/" + curLang}>
-        <Image rel="preload" src="/assets/logo.svg" alt="logo" width={0} height={0} style={{width: "100px", height: "auto"}} />
+        <Image rel="preload" src="/assets/logo.svg" alt="A logo of the site" width={0} height={0} style={{width: "100px", height: "auto"}} />
       </Link>
 
       <ul className="hidden h-full gap-12 lg:flex">
@@ -80,7 +80,7 @@ const Navbar = () => {
             title={t('callNow')}
             icon="/assets/call-black.svg"
             variant="btn_white_dark"
-            alt="call"
+            alt="button for make call"
           />
         </Link>
       </div>
@@ -90,7 +90,7 @@ const Navbar = () => {
           id='menuIcon'
           rel="preload"
           src={"/assets/menu.svg"}
-          alt={"menu"}
+          alt={"Hamburger menu for mobile"}
           width={32}
           height={32}
           className="inline-block cursor-pointer"
@@ -119,7 +119,7 @@ const Navbar = () => {
               title={t('callNow')}
               icon="/assets/call-black.svg"
               variant="btn_white_dark"
-              alt="call"
+              alt="button for make call"
             />
           </Link>
         </div>

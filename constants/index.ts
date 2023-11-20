@@ -1,7 +1,7 @@
 // NAVIGATION
 export const NAV_LINKS = [
     { href: '/', key: 'home', label: 'Home' },
-    { href: '/ourservices', key: 'services', label: 'Services' },
+    { href: '/our-services', key: 'services', label: 'Services' },
     { href: '/contact', key: 'contactUs', label: 'Contact Us' },
   ];
   
@@ -103,7 +103,7 @@ export const NAV_LINKS = [
     links: [
       // { label: 'Privacy Policy', href: '/privacy', key: 'privacy'},
       { label: 'Contact Us', href: '/contact', key: 'contactUs'},
-      { label: 'Services', href: '/ourservices', key: 'services'},
+      { label: 'Services', href: '/our-services', key: 'services'},
     ]
   };
   

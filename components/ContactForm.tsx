@@ -44,7 +44,7 @@ export default function ContactForm() {
                 <textarea name='message' className='h-32 noresize' id="message" placeholder={lang('formMessagePlaceHolder')}></textarea>
             </div>
             
-            <Button variant="btn_contact_send" type='submit' title={lang('formSendButton')} alt={''} />
+            <Button variant="btn_contact_send" type='submit' title={lang('formSendButton')} alt={'A button for send mails'} />
         </form>
         <ToastContainer 
         position='top-center'

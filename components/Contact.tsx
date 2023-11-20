@@ -36,7 +36,7 @@ function Contact() {
                 <Image
                     rel="preload"
                     src="/assets/image9.webp"
-                    alt="marriagePhoto"
+                    alt="A photo of couple hugging together"
                     width={440}
                     height={1000}
                     className="relative z-20 flex w-auto shadow"

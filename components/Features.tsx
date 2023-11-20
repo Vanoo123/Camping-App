@@ -15,7 +15,7 @@ const Features = () => {
             <Image
               rel="preload"
               src="/assets/phone.webp"
-              alt="phone"
+              alt="A screenshot of the site in mobile device"
               width={0} 
               height={0} 
               style={{width: "440px", height: "auto"}}
@@ -28,7 +28,7 @@ const Features = () => {
               <Image
                 rel="preload"
                 src="/assets/bouquet.svg"
-                alt="camp"
+                alt="A bouquet icon"
                 width={50}
                 height={50}
                 className="absolute left-[-5px] top-[-28px] w-10 lg:w-[50px]"
@@ -62,7 +62,7 @@ const FeatureItem = ({ title, icon, description }: FeatureItem) => {
   return (
     <li className="flex w-full flex-1 flex-col items-start">
       <div className="rounded-full p-4 lg:p-7 bg-green-50">
-        <Image src={icon} alt="map" width={28} height={28} />
+        <Image src={icon} alt="Icons" width={28} height={28} />
       </div>
       <h1 className="bold-20 lg:bold-32 mt-5 capitalize">
         {title}

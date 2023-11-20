@@ -17,7 +17,7 @@ const Hero: React.FC<componentProps> = async ({ lng } ) => {
           <Image
             rel="preload"
             src="/assets/bouquet.svg" 
-            alt="camp"
+            alt="A bouquet icon"
             width={50}
             height={50}
             className="absolute left-[-5px] top-[-30px] w-10 lg:w-[50px]"
@@ -36,7 +36,7 @@ const Hero: React.FC<componentProps> = async ({ lng } ) => {
                     rel="preload"
                     src="/assets/star.svg"
                     key={index}
-                    alt="star"
+                    alt="Star icon"
                     width={24}
                     height={24}
                   />
@@ -57,7 +57,7 @@ const Hero: React.FC<componentProps> = async ({ lng } ) => {
                 type="button"
                 title={t("getMarried")}
                 variant="btn_yellow_dark"
-                alt="get-married"
+                alt="A button for get-married"
               />
             </Link>
           </div>

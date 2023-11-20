@@ -21,7 +21,7 @@ const CampSite = async ({ backgroundImage, title, subtitle, peopleJoined }: Camp
           <Image
             rel="preload"
             src="/assets/folded-map.svg"
-            alt="map"
+            alt="A map pattern"
             width={28}
             height={28}
           />
@@ -40,7 +40,7 @@ const CampSite = async ({ backgroundImage, title, subtitle, peopleJoined }: Camp
               className="inline-block h-10 w-10 rounded-full"
               src={url}
               key={url}
-              alt="person"
+              alt="member photos"
               width={52}
               height={52}
             />
@@ -84,7 +84,7 @@ const Camp = () => {
           <Image 
             rel="preload"
             src="/assets/quote.svg"
-            alt="camp-2"
+            alt="quote icon"
             width={186}
             height={219}
             className="camp-quote"
