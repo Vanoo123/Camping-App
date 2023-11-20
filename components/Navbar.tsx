@@ -109,10 +109,10 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <div className='flex flex-col justify-center items-center'>
+        <div className='flex flex-col justify-center items-center mt-6'>
           <DropDown />
         </div>
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center mt-12">
           <Link href="https://wa.me/995557779117" target='_blank'>
             <Button
               type="button"
