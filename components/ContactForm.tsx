@@ -11,7 +11,7 @@ export default function ContactForm() {
 
     const sendmail=(e: any)=> {
         e.preventDefault()
-        emailjs.sendForm("service_ycfvw4c", "template_xq7654m",form.current,"2iTJ5kXczUqV3RFzf")
+        emailjs.sendForm("service_akpnyuk", "template_aep41t3",form.current,"1Cc6eVY10z0sk7HgU")
         .then(()=>{
             toast.success("message send")
         },()=>{

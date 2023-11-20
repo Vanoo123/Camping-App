@@ -48,8 +48,8 @@ const Accordion = () => {
         </h1> 
         {QUESTIONS.map((q) => (
           <div key={q.id} className="mb-4 last:mb-0">
-            <button
-              className="w-full text-left text-xl focus:outline-none p-4 bg-gray-100 rounded-lg shadow-md flex justify-between items-center"
+            <h1
+              className="w-full text-left text-xl focus:outline-none p-4 bg-gray-100 rounded-lg shadow-md flex justify-between items-center cursor-pointer"
               onClick={() =>
                 setActiveQuestion(q.id)
               }
@@ -64,7 +64,7 @@ const Accordion = () => {
                  <FaPlusCircle />
               </span>
               
-            </button>
+            </h1>
             <div id={'acor' + q.id} className="acorAll" style={{display:  activeQuestion === q.id ? 'block' :'none'}}>
               <AnimatePresence>
                 <motion.div
@@ -74,7 +74,7 @@ const Accordion = () => {
                   className="mt-2 text-gray-600 ml-4 text-lg flex flex-col gap-5">
                   <p>{lang(q.key + '.answer')}</p>
                   <ul className="text-black text-base flex flex-col gap-2">
-                    {q.child.map((ch) => (<li key={`${q.key}-${ch}`} className="rounded-lg font-bold">{lang(q.key + '.' + ch)}</li>))}
+                    {q.child.map((ch) => (<li key={`${q.key}-${ch}`} className="rounded-lg font-bold text-slate-600">{lang(q.key + '.' + ch)}</li>))}
                   </ul>
                   <p className="text-lg text-black">{lang(q.key + '.answer2')}</p>
                 </motion.div>

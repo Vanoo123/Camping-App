@@ -16,7 +16,9 @@ const CustomDropdown = () => {
     { label: 'EN', image: '/assets/en.png', value:'en'},
     { label: 'KA', image: '/assets/ka.png', value:'ka'},
     { label: 'RU', image: '/assets/ru.png', value:'ru'},
-    { label: 'DE', image: '/assets/de.png', value:'de'}
+    { label: 'DE', image: '/assets/de.png', value:'de'},
+    { label: 'AR', image: '/assets/ar.png', value:'ar'},
+    { label: 'ZH', image: '/assets/zh.png', value:'zh'}
   ];
   
   const defaultOp: IOptions | undefined = options.find((item: any) => item.value === curLang);

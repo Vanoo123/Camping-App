@@ -87,6 +87,7 @@ const Hero: React.FC<componentProps> = async ({ lng } ) => {
               </div>
             </div>
           </div>
+            <h1 className="hidden">{t("hiddenSearch")}</h1>
         </div>
       </section>
     );
