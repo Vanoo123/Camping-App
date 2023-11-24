@@ -29,18 +29,18 @@ const RootLayout: React.FC<RootLayoutProps> = async ({ children, params: { lng }
       <link rel="icon" href="/assets/favicon.ico"/>
       <link rel="manifest" href="/assets/manifest.json" />
       <meta name="description" content={t('metaData.description')}/>
-      <meta property='og:url' content='https://wedding-guide-app.vercel.app/en'/>
+      <meta property='og:url' content='https://marriageg.com/en'/>
       <meta property='og:type' content='website'/>
       <meta property='og:title' content={t('metaData.title')}/>
       <meta property='og:description' content={t('metaData.description')}/>
-      <meta property='og:image' content='https://i.ibb.co/Ss3fTq6/Wedding-Georgia.jpg'/>
+      <meta property='og:image' content='https://i.ibb.co/HP0SV4d/wedding.png'/>
       <meta name='theme-color' content='#fffff'/>      
       <meta property='color-scheme' content='white only'/>
-      <meta property='twitter:url' content='https://wedding-guide-app.vercel.app/en'/>
+      <meta property='twitter:url' content='https://marriageg.com/en'/>
       <meta name="twitter:description"  content={t('metaData.description')}/>
       <meta name='twitter:card' content='summary_large_image'/>
-      <meta name='twitter:image' content='https://i.ibb.co/Ss3fTq6/Wedding-Georgia.jpg'/>
-      <link rel="alternate" href="https://marriageg.com/en" hrefLang="x-default"/>
+      <meta name='twitter:image' content='https://i.ibb.co/HP0SV4d/wedding.png'/>
+      <link rel="alternate" href="https://marriageg.com/en" hrefLang="en"/>
       <link rel="alternate" href="https://marriageg.com/ka" hrefLang="ka"/>
       <link rel="alternate" href="https://marriageg.com/ru" hrefLang="ru"/>
       <link rel="alternate" href="https://marriageg.com/de" hrefLang="de"/>

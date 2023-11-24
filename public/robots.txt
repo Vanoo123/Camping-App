@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://marriageg.com
+
+# Sitemaps
+Sitemap: https://marriageg.com/sitemap.xml
