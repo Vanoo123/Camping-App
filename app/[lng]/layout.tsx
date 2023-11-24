@@ -27,17 +27,25 @@ const RootLayout: React.FC<RootLayoutProps> = async ({ children, params: { lng }
 
       <title>{t('metaData.title')}</title>
       <link rel="icon" href="/assets/favicon.ico"/>
+      <link rel="manifest" href="/assets/manifest.json" />
       <meta name="description" content={t('metaData.description')}/>
       <meta property='og:url' content='https://wedding-guide-app.vercel.app/en'/>
       <meta property='og:type' content='website'/>
       <meta property='og:title' content={t('metaData.title')}/>
       <meta property='og:description' content={t('metaData.description')}/>
       <meta property='og:image' content='https://i.ibb.co/Ss3fTq6/Wedding-Georgia.jpg'/>
-      <meta property='theme-color' content='#fffff'/>      
+      <meta name='theme-color' content='#fffff'/>      
       <meta property='color-scheme' content='white only'/>
       <meta property='twitter:url' content='https://wedding-guide-app.vercel.app/en'/>
+      <meta name="twitter:description"  content={t('metaData.description')}/>
       <meta name='twitter:card' content='summary_large_image'/>
       <meta name='twitter:image' content='https://i.ibb.co/Ss3fTq6/Wedding-Georgia.jpg'/>
+      <link rel="alternate" href="https://marriageg.com/en" hrefLang="x-default"/>
+      <link rel="alternate" href="https://marriageg.com/ka" hrefLang="ka"/>
+      <link rel="alternate" href="https://marriageg.com/ru" hrefLang="ru"/>
+      <link rel="alternate" href="https://marriageg.com/de" hrefLang="de"/>
+      <link rel="alternate" href="https://marriageg.com/ar" hrefLang="ar"/>
+      <link rel="alternate" href="https://marriageg.com/zh" hrefLang="zh"/>
       {/* icons */}
       </head>
       <body className='scrollbar-thin scrollbar-thumb-green-50 scrollbar-track-gray-10'>
