@@ -72,7 +72,7 @@ const Accordion = () => {
                   animate={{ opacity: 1, height: "auto" }}
                   exit={{ opacity: 0, height: 0 }}
                   className="mt-2 text-gray-600 ml-4 text-lg flex flex-col gap-5">
-                  <p>{lang(q.key + '.answer')}</p>
+                  <h1>{lang(q.key + '.answer')}</h1>
                   <ul className="text-black text-base flex flex-col gap-2">
                     {q.child.map((ch) => (<li key={`${q.key}-${ch}`} className="rounded-lg font-bold text-slate-600">{lang(q.key + '.' + ch)}</li>))}
                   </ul>
