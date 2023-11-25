@@ -36,7 +36,6 @@ const RootLayout: React.FC<RootLayoutProps> = async ({ children, params: { lng }
       <meta name="author" content="Marriage" />
       <meta name="publisher" content="I_T" />
       <meta property='og:url' content='https://marriageg.com/en'/>
-      <link rel="canonical" href="https://www.marriageg.com/en"/>
       <meta property='og:type' content='website'/>
       <meta property='og:title' content={t('metaData.title')}/>
       <meta property='og:description' content={t('metaData.description')}/>
