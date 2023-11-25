@@ -29,8 +29,8 @@ const RootLayout: React.FC<RootLayoutProps> = async ({ children, params: { lng }
       <link rel="icon" href="/assets/favicon.ico"/>
       <link rel="manifest" href="/assets/manifest.json" />
       <meta name="description" content={t('metaData.description')}/>
+      <meta name="yandex-verification" content="c1acff73e98ec167"/>
       <meta name='google-site-verification' content='PUy3W-uUr3Rz0eMwYpPe5-8THu0lWbvXWAmYl_5wjDc'/>
-      <meta name="yandex-verification" content="c1acff73e98ec167" />
       <meta name="author" content="Marriage" />
       <meta name="publisher" content="I_T" />
       <meta property='og:url' content='https://marriageg.com/en'/>
