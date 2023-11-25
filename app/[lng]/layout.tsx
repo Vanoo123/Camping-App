@@ -30,6 +30,7 @@ const RootLayout: React.FC<RootLayoutProps> = async ({ children, params: { lng }
       <link rel="manifest" href="/assets/manifest.json" />
       <meta name="description" content={t('metaData.description')}/>
       <meta name='google-site-verification' content='PUy3W-uUr3Rz0eMwYpPe5-8THu0lWbvXWAmYl_5wjDc'/>
+      <meta name="yandex-verification" content="6f4af44e00e07efd"/>
       <meta name="author" content="Marriage" />
       <meta name="publisher" content="I_T" />
       <meta property='og:url' content='https://marriageg.com/en'/>
@@ -53,11 +54,14 @@ const RootLayout: React.FC<RootLayoutProps> = async ({ children, params: { lng }
       <link rel="alternate" href="https://marriageg.com/zh" hrefLang="zh"/>
       <script async src={`https://www.googletagmanager.com/gtag/js?id=G-DSYRE1686Q`}/>
       <script dangerouslySetInnerHTML={{
-        __html: `window.dataLayer = window.dataLayer || [];
+        __html: `
+        window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-DSYRE1686Q');
-        `
+        gtag('config', 'G-DSYRE1686Q', {
+          page_path: window.location.pathname,
+        });
+        `,
       }}/>
       {/* icons */}
       </head>
