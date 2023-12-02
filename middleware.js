@@ -7,7 +7,7 @@ acceptLanguage.languages(languages);
 export const config = {
   // matcher: '/:lng*'
   matcher: [
-    "/((?!api|_next/static|_next/image|assets|favicon.ico|sw.js|sitemap.xml|robots.txt|yandex_c1acff73e98ec167.html).*)",
+    "/((?!api|_next/static|_next/image|assets|favicon.ico|manifest.json|sw.js|sitemap.xml|robots.txt|yandex_c1acff73e98ec167.html).*)",
   ],
 };
 
