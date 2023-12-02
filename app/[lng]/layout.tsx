@@ -26,7 +26,7 @@ const RootLayout: React.FC<RootLayoutProps> = async ({ children, params: { lng }
       <head>
 
       <title>{t('metaData.title')}</title>
-      <link rel="icon" href="/assets/favicon.ico" type="image/x-icon"/>
+      <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
       <link rel="apple-touch-icon" sizes="57x57" href="/assets/apple-icon-57x57.png"/>
       <link rel="apple-touch-icon" sizes="60x60" href="/assets/apple-icon-60x60.png"/>
       <link rel="apple-touch-icon" sizes="72x72" href="/assets/apple-icon-72x72.png"/>
