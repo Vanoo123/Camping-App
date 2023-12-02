@@ -59,7 +59,7 @@ const RootLayout: React.FC<RootLayoutProps> = async ({ children, params: { lng }
       <meta name="twitter:description"  content={t('metaData.description')}/>
       <meta name='twitter:card' content='summary_large_image'/>
       <meta name='twitter:image' content='https://i.ibb.co/HP0SV4d/wedding.png'/>
-      <link rel="canonical" href="https://marriageg.com/en"/>
+      <link rel="canonical" href="https://www.marriageg.com/"/>
       <link rel="alternate" href="https://marriageg.com/en" hrefLang="en"/>
       <link rel="alternate" href="https://marriageg.com/ka" hrefLang="ka"/>
       <link rel="alternate" href="https://marriageg.com/ru" hrefLang="ru"/>
