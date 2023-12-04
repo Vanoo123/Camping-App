@@ -73,17 +73,6 @@ const RootLayout: React.FC<RootLayoutProps> = async ({ children, params: { lng }
       <link rel="alternate" href="https://marriageg.com/de" hrefLang="de"/>
       <link rel="alternate" href="https://marriageg.com/ar" hrefLang="ar"/>
       <link rel="alternate" href="https://marriageg.com/zh" hrefLang="zh"/>
-      <script async src={`https://www.googletagmanager.com/gtag/js?id=G-DSYRE1686Q`}/>
-      <script dangerouslySetInnerHTML={{
-        __html: `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-DSYRE1686Q', {
-          page_path: window.location.pathname,
-        });
-        `,
-      }}/>
       {/* icons */}
       </head>
       <body className='scrollbar-thin scrollbar-thumb-green-50 scrollbar-track-gray-10'>
@@ -95,6 +84,17 @@ const RootLayout: React.FC<RootLayoutProps> = async ({ children, params: { lng }
             <Footer />
         </LangProvider>
         <script src="/assets/js/main.js" async defer></script>
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=G-DSYRE1686Q`}/>
+        <script dangerouslySetInnerHTML={{
+          __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-DSYRE1686Q', {
+            page_path: window.location.pathname,
+          });
+          `,
+        }}/>
       </body>
     </html>
     )
