@@ -7,7 +7,7 @@ acceptLanguage.languages(languages);
 export const config = {
   // matcher: '/:lng*'
   matcher: [
-    "/((?!api|_next/static|_next/image|assets|favicon.ico|apple-touch-icon.png|favicon-16x16.png|favicon-32x32.png|mstile-150x150.png|safari-pinned-tab.svg|browserconfig.xml|manifest.json|sw.js|sitemap.xml|robots.txt|yandex_c1acff73e98ec167.html).*)",
+    "/((?!api|_next/static|_next/image|assets|favicon.ico|apple-touch-icon.png|favicon-16x16.png|favicon-32x32.png|apple-icon-120x120.png|mstile-150x150.png|safari-pinned-tab.svg|browserconfig.xml|manifest.json|sw.js|sitemap.xml|robots.txt|yandex_c1acff73e98ec167.html).*)",
   ],
 };
 
