@@ -32,8 +32,7 @@ const RootLayout: React.FC<RootLayoutProps> = async ({ children, params: { lng }
             </main>
             <Footer />
         </LangProvider>
-        <script src="/assets/js/main.js" async defer></script>
-        <script async defer src={`https://www.googletagmanager.com/gtag/js?id=G-DSYRE1686Q`}/>
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=G-DSYRE1686Q`}/>
         <script dangerouslySetInnerHTML={{
           __html: `
           window.dataLayer = window.dataLayer || [];
