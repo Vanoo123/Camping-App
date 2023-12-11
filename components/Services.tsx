@@ -37,6 +37,7 @@ const Services = () => {
               rel="preload"
               src="/assets/image1.webp"
               alt="A photo of couple huging together"
+              fetchPriority="high"
               width={440}
               height={1000}
               className="relative z-20 flex w-auto shadow"

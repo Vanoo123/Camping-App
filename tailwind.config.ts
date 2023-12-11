@@ -36,6 +36,7 @@ module.exports = {
         pattern: "url('/assets/pattern.webp')",
         'pattern-2': "url('/assets/hero.webp')",
         'parallax': "url('/assets/image7.webp')",
+        'pattern-2-mobile': "url('/assets/hero-mobile.webp')"
       },
       screens: {
         xs: '400px',

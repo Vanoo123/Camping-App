@@ -35,6 +35,7 @@ function Contact() {
             <div>
                 <Image
                     rel="preload"
+                    fetchPriority='high'
                     src="/assets/image9.webp"
                     alt="A photo of couple hugging together"
                     width={440}
