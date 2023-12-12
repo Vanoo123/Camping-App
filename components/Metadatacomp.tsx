@@ -59,7 +59,38 @@ const Metadatacomp: React.FC<RootLayoutProps> = async ({ children, params: { lng
                     <link rel="alternate" href="https://marriageg.com/de" hrefLang="de"/>
                     <link rel="alternate" href="https://marriageg.com/ar" hrefLang="ar"/>
                     <link rel="alternate" href="https://marriageg.com/zh" hrefLang="zh"/>
-                    {/* icons */}
+                    <script type="application/ld+json" dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            "@context": "https://schema.org",
+                            "@type": "FAQPage",
+                            "mainEntity": [
+                                {
+                                    "@type": "Question",
+                                    "name": t('faq.question1'),
+                                    "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": t('faq.answer1')
+                                    }
+                                },
+                                {
+                                    "@type": "Question",
+                                    "name": t('faq.question2'),
+                                    "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": t('faq.answer2')
+                                    }
+                                },
+                                {
+                                    "@type": "Question",
+                                    "name": t('faq.question3'),
+                                    "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": t('faq.answer3')
+                                    }
+                                },
+                            ]
+                        })
+                    }} />
                 </head>
             )
     })

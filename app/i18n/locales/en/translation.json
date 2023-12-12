@@ -117,5 +117,14 @@
     "metaData": {
         "title": "Get married easily in Georgia with the help of MarriageGuide.",
         "description": "Our service offers marriage organization in Georgia, for representatives of foreign countries, in the shortest time, with minimum expenses and bureaucracy."
+    },
+    "faq": {
+        "question1": "Can foreigners get married in Georgia?",
+        "answer1": "Foreign citizens, even those without residence permits, can get married in Georgia. In recent years Georgia has become one of the centers of wedding tourism in the world. This is due to the very loyal legislation of Georgia in matters of marriage.",
+        "question2": "What documents do I need to get married in Georgia?",
+        "answer2": "Passport (with a translation into Georgian, certified by a notary), An approved application for marriage registration. To be submitted at the House of Justice in advance and Certified certificate of divorce, if one or both partners were previously married.",
+        "question3": "Individual wedding planning",
+        "answer3": "Organizing a wedding, especially abroad, is a complex and time-consuming process. For your wedding to go the way you want it to, you need a specialist’s help. MarriageGuide Agency is engaged in individual wedding planning for foreign couples in Georgia."
     }
+    
 }
