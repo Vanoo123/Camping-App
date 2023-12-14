@@ -88,6 +88,15 @@ const Hero: React.FC<componentProps> = async ({ lng } ) => {
             </div>
           </div>
             <h1 className="hidden">{t("hiddenSearch")}</h1>
+            <h1 className="hidden">{t("hiddenTitle")}</h1>
+            <h1 className="hidden">{t("hiddenTitle2")}</h1>
+            <p className="hidden">{t("hiddenAnswer")}</p>
+            <h1 className="hidden">{t("hiddenTitle3")}</h1>
+            <p className="hidden">{t("hiddenAnswer2")}</p>
+            <h1 className="hidden">{t("hiddenTitle4")}</h1>
+            <p className="hidden">{t("hiddenAnswer3")}</p>
+            <h1 className="hidden">{t("hiddenTitle5")}</h1>
+            <h1 className="hidden">{t("hiddenTitle6")}</h1>
         </div>
       </section>
     );
